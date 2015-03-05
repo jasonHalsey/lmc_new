@@ -1,0 +1,25 @@
+body {
+	margin:0;
+}
+div.portfolio-bg{
+	width:100%;
+	height:100%;
+}
+#holder{
+	// width:100%;
+	// height:450px;
+}
+#main{
+	@include outer-container;
+}
+
+.pgm{
+	img{
+		width:100%!important;
+		height:auto;
+	}
+	.canvas{
+		width:100%!important;
+		height: auto;
+	}
+}
