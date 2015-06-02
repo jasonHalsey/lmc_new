@@ -4,10 +4,13 @@
  * @subpackage lmc
  */
 
-get_header(); ?>
-<div id="holder">
-	<?php echo do_shortcode( "[rev_slider homeSlider]" );?>
-</div>
+if ( is_front_page() ) {
+  get_header();
+} else {
+  get_header('interior');
+}
+?>
+
 <h5>
   Recent Projects
 </h5>
