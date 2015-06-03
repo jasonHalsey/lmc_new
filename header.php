@@ -69,17 +69,19 @@
 
     </div>
 
+    <div id="holder">
+      <div id="main_slider" class="cycle-slideshow">
+        <img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/tmp_img/riverplace_gallery28.jpg" />
+        <img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/tmp_img/riverplace_gallery29.jpg" />
+        <img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/tmp_img/riverplace_gallery36.jpg" />
+      </div> 
+    </div>
+
     <!--#########################################################################################################-->
 
   </section>
 
-  <div id="holder">
-    <div id="main_slider" class="cycle-slideshow">
-      <img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/tmp_img/riverplace_gallery28.jpg" />
-      <img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/tmp_img/riverplace_gallery29.jpg" />
-      <img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/tmp_img/riverplace_gallery36.jpg" />
-    </div>
-  </div>
+
 
 <div id="main" class="site-main">
 <h1>This is the home</h1>

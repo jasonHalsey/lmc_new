@@ -25,26 +25,6 @@ jQuery(document).ready(function() {
 	  });
 
 
-	// Maximage Homepage Slider //
-
-	jQuery(function(){
-	    jQuery('#maximage').maximage({
-	        cycleOptions: {
-	            fx:'scrollHorz',
-	            speed: 800,
-	            timeout: 10000,
-	            prev: '#arrow_left',
-	            next: '#arrow_right'
-	        },
-			fillElement: '#holder',
-			backgroundSize: 'contain'
-	    });
-	});
-
-	jQuery(function(){
-	    jQuery('.portfolio-bg').maximage();
-	});
-
 
 	jQuery('.hover-tile-hidden').on('click', function() {
 		var url = jQuery(this).find('a').attr('href');
@@ -52,6 +32,25 @@ jQuery(document).ready(function() {
 	});
 
 
+	adjustSlider();
+
 }); //End document.ready();
+
+jQuery(window).resize(function() {
+	adjustSlider();
+});
+
+
+function adjustSlider() {
+	var sliderheight = jQuery('#main_slider img').height();
+	jQuery('#trans-bars').css( 'height', sliderheight + 120 );
+	jQuery('.tag').css( 'height', sliderheight + 85 );
+	console.log(sliderheight + "px");
+  
+}
+
+
+
+
 
 

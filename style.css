@@ -1056,7 +1056,7 @@ div.portfolio-bg {
   height: 100%;
 }
 
-/* line 12, sass/partials/_structure.scss */
+/* line 9, sass/partials/_structure.scss */
 #main {
   max-width: 68em;
   margin-left: auto;
@@ -1069,12 +1069,12 @@ div.portfolio-bg {
   clear: both;
 }
 
-/* line 17, sass/partials/_structure.scss */
+/* line 14, sass/partials/_structure.scss */
 .pgm img {
   width: 100% !important;
   height: auto;
 }
-/* line 21, sass/partials/_structure.scss */
+/* line 18, sass/partials/_structure.scss */
 .pgm .canvas {
   width: 100% !important;
   height: auto;
@@ -1083,12 +1083,14 @@ div.portfolio-bg {
 /* line 1, sass/partials/_home.scss */
 #trans-bars {
   width: 100%;
-  max-width: 68em;
-  margin: 0 auto;
+  margin: 0 auto 0;
   position: relative;
+  z-index: 9999;
+  left: 0;
+  right: 0;
 }
 
-/* line 8, sass/partials/_home.scss */
+/* line 11, sass/partials/_home.scss */
 .background-bar {
   height: 120px;
   width: 100%;
@@ -1098,7 +1100,7 @@ div.portfolio-bg {
   left: 0;
 }
 
-/* line 17, sass/partials/_home.scss */
+/* line 20, sass/partials/_home.scss */
 h5:after {
   border-top: solid 1px black;
   padding-top: 40px;
@@ -1108,9 +1110,47 @@ h5:after {
   height: 20px;
 }
 
-/* line 27, sass/partials/_home.scss */
+/* line 30, sass/partials/_home.scss */
+#main_slider div {
+  width: 100%;
+}
+/* line 33, sass/partials/_home.scss */
 #main_slider img {
   width: 100%;
+}
+
+/* line 37, sass/partials/_home.scss */
+#holder {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+
+/* line 43, sass/partials/_home.scss */
+.mission {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 2.0em 2.0em 2.0em 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 15%;
+  z-index: 8;
+}
+
+/* line 55, sass/partials/_home.scss */
+.tag {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 15%;
+  width: 20%;
+  bottom: 0;
+  z-index: 9;
 }
 
 /* line 1, sass/partials/_team.scss */
