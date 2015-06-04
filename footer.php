@@ -9,8 +9,6 @@
  */
 ?>
 
-		</div><!-- #main -->
-
 		<footer id="colophon" class="site-footer footer-2" role="contentinfo">
 			<div id="footer-container">	
 			  <div class="footer-logo">
@@ -28,7 +26,7 @@
 			        <li><a href="javascript:void(0)">Privacy Policy</a></li>
 			      </ul>
 
-			      <ul class="footer-social">
+			      <!-- <ul class="footer-social">
 			        <li><a href="javascript:void(0)">
 			          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="">
 			          </a></li>
@@ -38,7 +36,7 @@
 			        <li><a href="javascript:void(0)">
 			          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="">
 			        </a></li>
-			      </ul>
+			      </ul> -->
 			    </div>
 			</div>
 		</footer><!-- #colophon -->

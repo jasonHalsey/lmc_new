@@ -20,6 +20,8 @@
 	<title><?php wp_title( '|', true, 'right' ); ?>LMC Construction</title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
@@ -34,17 +36,17 @@
     <!--#########################################################################################################-->
 
     <div class="logo-cta">
-      <a href="javascript:void(0)" class="logo">
-        <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="">
-      </a>
-
       <div class="tag">
-        <a href="#">Bid Room</a>
-        <a href="#">Contact Us</a>
-      </div>
-
-      <div class="tag">
-        We’re Involved at LMC Construction.
+        <a href="javascript:void(0)" class="logo">
+          <img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/LMC_logo.svg" />
+        </a>
+        <div class="ctas">
+          <a href="#">Bid Room</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <span>
+          We’re<br />Involved<br /> at <span>LMC Construction.</span>
+        </span>
       </div>
     </div>
 
@@ -81,7 +83,3 @@
 
   </section>
 
-
-
-<div id="main" class="site-main">
-<h1>This is the home</h1>

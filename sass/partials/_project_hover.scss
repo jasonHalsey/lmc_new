@@ -2,6 +2,7 @@ $medium-screen: em(640);
 
 #project-container{
   @include outer-container;
+  margin-top: 2.0em;
 }
 
 .single-project{

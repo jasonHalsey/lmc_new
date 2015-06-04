@@ -17,15 +17,6 @@
 	left:0;
 }
 
-h5:after {
-	border-top: solid 1px black;
-	padding-top: 40px;
-	margin-top: -40px;
-	width:100%;
-	display: block;	
-	height:20px;
-}
-
 #main_slider{
 	div{
 		width:100%;
@@ -36,31 +27,109 @@ h5:after {
 }
 #holder{
 	position: absolute;
+	top:120px;
 	left:0;
 	right:0;
 	z-index:5;
 }
+.logo{
+	text-align: center;
+	img{
+		display: block;
+		margin: 0.5em auto 2.0em;
+	}
+}
+.ctas{
+	padding: 0px 0.75em 0;
+	width:100%;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-size: 1.25em;
+	a{
+		display: block;
+		background-color: $cta-background-color;
+		color:#fff;
+		text-transform: uppercase;
+		padding:0.5em 1.0em;
+		margin-bottom: 0.75em;
+		width:100%;
+		position: relative;
+		&:hover{
+			background-color: $cta-background-color-dk;
+			&:after{
+				background-color: $cta-background-color;
+			}
+		}
+		&:after{
+			content: ">";
+			display: inline;
+			width:20%;
+			background-color: $cta-background-color-dk;
+			position: absolute;
+			right:0;
+			top:0;
+			bottom: 0;
+			text-align: center;
+			line-height: 2.3em;
+		}	
+	}
+}
 .mission{
 	display: block;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.4);
 	color:#fff;
-	padding:2.0em 2.0em 2.0em 50%;
+	padding:2.0em 2.0em 2.0em 37%;
 	position: absolute;
 	left:0;
 	right:0;
 	bottom:15%;
 	z-index: 8;
+	span{
+		display:block;
+		width:100%;
+		max-width: 40em;
+	}
 }
 
 .tag{
 	display: block;
-	background-color: rgba(0, 0, 0, 0.5);
-	color:#fff;
-	// padding:0.5em;
+	background-color: rgba(0, 0, 0, 0.4);
+	color:#9b9b9b;
 	position: absolute;
 	top:0;
 	left:15%;
 	width:20%;
 	bottom:0;
 	z-index: 9;
+	max-width:266px;
+	> span{
+		display:block;
+		position: absolute;
+		bottom:19.3%;
+		font-family: $primary-font;
+		font-weight: 700;
+		font-size: 1.45em;
+		text-align: right;
+		text-transform: uppercase;
+		padding:0 1.1em;
+		span{
+			color: #fff;
+		}
+	}
+}
+
+//-- Row Formatting
+.dark-stripe{
+	background-color: $dk-grey;
+	padding:1.0em 0;
+	h2{
+		display:block;
+		background-color: $dk-grey-highlight;
+		padding: 0.5em 0;
+		text-align: center;
+		color:#fff;
+		font-family: $primary-font;
+		text-transform: uppercase;
+		font-size: 2.0em;
+	}
 }

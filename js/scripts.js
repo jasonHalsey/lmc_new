@@ -44,9 +44,7 @@ jQuery(window).resize(function() {
 function adjustSlider() {
 	var sliderheight = jQuery('#main_slider img').height();
 	jQuery('#trans-bars').css( 'height', sliderheight + 120 );
-	jQuery('.tag').css( 'height', sliderheight + 85 );
-	console.log(sliderheight + "px");
-  
+	jQuery('.tag').css( 'height', sliderheight + 120 );
 }
 
 

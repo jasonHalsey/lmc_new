@@ -3,9 +3,9 @@ $large-screen: em(860);
 header.navigation {
   $navigation-padding: 1em;
   // $navigation-background: #471d11;
-  $navigation-color: transparentize(white, 0.3);
+  $navigation-color: white;
   $navigation-background: transparent;
-  $navigation-color-hover: white;
+  $navigation-color-hover: transparentize(white, 0.3);
   $navigation-height: 120px;
   $navigation-nav-button-background: $base-accent-color;
   $navigation-nav-button-background-hover: lighten($navigation-background, 10);
@@ -19,21 +19,27 @@ header.navigation {
 
   
   border-bottom: 1px solid darken($navigation-background, 10);
-  //height: $navigation-height;
-
+  height: $navigation-height;
   background-color: $navigation-background;
-  z-index: 999;
-  top: 0;
-  position: absolute;
-  right: 0;
-  width: 80%;
+  width: 100%;
   z-index: 999;
 
   .navigation-wrapper {
     @include clearfix;
-    @include outer-container;
     position: relative;
+    margin: 0 auto;
     z-index: 9999;
+    width:60%;
+    float: right;
+    @media screen and (min-width:em(1400)){
+      width:62%;
+    }
+    @media screen and (min-width:em(1700)){
+      width:67%;
+    }
+    @media screen and (min-width:em(2000)){
+      width:70%;
+    }
   }
 
   .logo {
@@ -108,6 +114,7 @@ header.navigation {
     text-align: right;
     width: 100%;
     z-index: 9999;
+    font-family: $primary-font;
 
     @include media ($horizontal-bar-mode) {
       background: transparent;
@@ -121,7 +128,8 @@ header.navigation {
       color: $navigation-color;
       display: inline-block;
       font-weight: 400;
-
+      text-transform: capitalize;
+      font-size: 1.25em;
       @include media ($horizontal-bar-mode) {
         padding-right: 1em;
       }
