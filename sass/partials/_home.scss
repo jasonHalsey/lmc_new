@@ -1,3 +1,9 @@
+html{
+	background-color: $footer-background;	
+}
+body {
+	font-family: $secondary-font;
+}
 #trans-bars{
 	width:100%;
 	// max-width: $max-width;
@@ -18,8 +24,11 @@
 }
 
 #main_slider{
+	visibility:hidden;
+
 	div{
 		width:100%;
+
 	}
 	img{
 		width:100%;
@@ -82,7 +91,7 @@
 	position: absolute;
 	left:0;
 	right:0;
-	bottom:15%;
+	bottom:8%;
 	z-index: 8;
 	span{
 		display:block;
@@ -105,7 +114,7 @@
 	> span{
 		display:block;
 		position: absolute;
-		bottom:19.3%;
+		bottom:10.3%;
 		font-family: $primary-font;
 		font-weight: 700;
 		font-size: 1.45em;
@@ -114,6 +123,27 @@
 		padding:0 1.1em;
 		span{
 			color: #fff;
+		}
+	}
+}
+
+.home_content{
+	@include outer-container();
+	.home_content-text{
+		@include span-columns(8);
+		h2{
+			font-family: $primary-font;
+			padding: 0.5em 0;
+			font-weight: 300;
+			text-transform: uppercase;
+		}
+		line-height: 2.0em;
+	}
+	.home_content-side{
+		@include span-columns(4);
+		text-align: right;
+		img{
+			margin: 1.5em 0;
 		}
 	}
 }
@@ -131,5 +161,11 @@
 		font-family: $primary-font;
 		text-transform: uppercase;
 		font-size: 2.0em;
+		font-weight: 300;
 	}
+}
+.light-stripe{
+	background-color: $light-grey;
+	padding:1.0em 0;
+	color: #fff;
 }

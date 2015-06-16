@@ -1,5 +1,8 @@
 jQuery(document).ready(function() {
 	
+	jQuery('#main_slider').show();
+
+
 	// Refills Navigation Script //
 
 	  var menu = jQuery('#menu-primary');
@@ -33,6 +36,8 @@ jQuery(document).ready(function() {
 
 
 	adjustSlider();
+
+
 
 }); //End document.ready();
 

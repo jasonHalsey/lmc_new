@@ -7,9 +7,9 @@
  * @since lmc 1.0
  */
 
-get_header(); ?>
+ get_header('interior'); ?>
 
-
+<h2>This is single portfolio</h2>
 
 <?php while ( have_posts() ) : the_post(); ?>
 	<?php if ( is_single() ) : ?>

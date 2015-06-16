@@ -41,19 +41,32 @@ $medium-screen: em(640);
 
   .hover-tile-visible {
     color: transparentize(white, .3);
-    font-size: 2em;
-    font-weight: 200;  
-    padding-top: 2em;
+    font-size: 1.35em;
+    font-weight: 200;
     text-align: center;
+    padding: 5.9em 0 0;
+    span{
+      display: block;
+      width: 100%;
+      background: transparentize($cta-background-color, .3);
+      line-height: 1.4em;
+      text-transform: uppercase;
+      font-family: $primary-font;
+    }
   }
 
   .hover-tile-hidden {
-    background: transparentize(black, .5);
+    background: transparentize($cta-background-color, .3);
     h4 {
-      margin-bottom: .5em;
+      margin-bottom: .2em;
+      font-family: $primary-font;
     }
     p {
       color: transparentize(white, .3);
+      span{
+        font-family: $primary-font;
+        color:#fff;
+      }
     }
   }
 }

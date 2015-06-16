@@ -12,31 +12,18 @@
 		<footer id="colophon" class="site-footer footer-2" role="contentinfo">
 			<div id="footer-container">	
 			  <div class="footer-logo">
-			    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="">
+			    <a href="javascript:void(0)">
+			    	<img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/LMC_shield.svg">
+			    </a>
 			  </div>
-			    <ul>
-			      <li><a href="javascript:void(0)">About</a></li>
-			      <li><a href="javascript:void(0)">Contact</a></li>
-			      <li><a href="javascript:void(0)">Products</a></li>
-			    </ul>
+			  <?php wp_nav_menu( array( 'theme_location' => 'secondary-menu', 'menu_class' => 'nav-menu' ) ); ?>
+
 
 			    <div class="footer-secondary-links">
 			      <ul>
 			        <li><a href="javascript:void(0)">Terms and Conditions</a></li>
 			        <li><a href="javascript:void(0)">Privacy Policy</a></li>
 			      </ul>
-
-			      <!-- <ul class="footer-social">
-			        <li><a href="javascript:void(0)">
-			          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="">
-			          </a></li>
-			        <li><a href="javascript:void(0)">
-			          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="">
-			        </a></li>
-			        <li><a href="javascript:void(0)">
-			          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="">
-			        </a></li>
-			      </ul> -->
 			    </div>
 			</div>
 		</footer><!-- #colophon -->

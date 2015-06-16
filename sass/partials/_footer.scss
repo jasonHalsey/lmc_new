@@ -32,6 +32,14 @@ html, body {
   .footer-logo {
     margin-right: 1em;
     margin-bottom: 1em;
+    a{
+      img{
+        opacity: 0.4;
+        &:hover{
+          opacity: 1.0;
+        }
+      }
+    }
 
     @include media($large-screen) {
       float: left;
@@ -41,6 +49,7 @@ html, body {
 
   #footer-container{
   	@include outer-container;
+    margin-bottom: 2.5em;
   }
 
   .footer-logo img {

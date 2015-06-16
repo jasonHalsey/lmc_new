@@ -1,3 +1,9 @@
+//Media Breakpoints
+$desktop: new-breakpoint(min-width 980px);
+$tablet: new-breakpoint(max-width 979px);
+$mobile: new-breakpoint(max-width 767px);
+$phone: new-breakpoint(max-width 468px);
+
 // CTAS
 $cta-background-color: #0b5359;
 $cta-background-color-dk:darken($cta-background-color, 10%);
@@ -6,6 +12,7 @@ $cta-background-color-dk:darken($cta-background-color, 10%);
 //Fonts
 $primary-font: 'Oswald', sans-serif;
 $secondary-font: 'PT Sans', sans-serif;
+$base-font-family: $secondary-font!important;
 
 //Rows
 $dk-grey: #1c1c1c;

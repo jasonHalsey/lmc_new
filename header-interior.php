@@ -30,23 +30,49 @@
 
 <div class="wrapper-for-content-outside-of-footer">
 <body <?php body_class(); ?>>
+	<div class="background-bar"></div>
+  <section id="trans-bars">
 
+    <!--#########################################################################################################-->
 
-<!--#########################################################################################################-->
+    <div class="logo-cta">
+      <div class="tag">
+        <a href="javascript:void(0)" class="logo">
+          <img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/LMC_logo.svg" />
+        </a>
+        <div class="ctas">
+          <a href="#">Bid Room</a>
+          <a href="#">Contact Us</a>
+        </div>
 
-<header class="navigation ">
-  <div class="navigation-wrapper ">
-    <a href="javascript:void(0)" class="logo">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="">
-    </a>
-    <a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
-    <div class="nav">
-      <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+      </div>
     </div>
-  </div>
-</header>
 
-<!--#########################################################################################################-->
+    <!--#########################################################################################################-->
 
-<div id="main" class="site-main">
-<h1>This is the interior</h1>
+    <header class="navigation ">
+      <div class="navigation-wrapper ">
+        <a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+        <div class="nav">
+          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+        </div>
+      </div>
+    </header>
+
+    <!--#########################################################################################################-->
+
+    <div id="holder">
+      <div id="main_slider" class="cycle-slideshow">
+     	<?php while ( have_posts() ) : the_post(); ?>
+			<?php 
+				foreach(get_images_src('large','false') as $k => $i){
+				echo '<img src="'.$i[0].'" width="'.$i[1].'"  />';
+				}
+			?> 
+		<?php endwhile; ?>
+      </div> 
+    </div>
+
+    <!--#########################################################################################################-->
+
+  </section>
