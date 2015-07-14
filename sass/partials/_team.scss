@@ -1,8 +1,8 @@
 div.individual-container{
 	@include outer-container;
-	@include omega;
+	
 	@include clearfix;
-	background-color:yellow; //TODO:Remove
+	margin-top: 0.25em;
 }
 
 article.individual-member{

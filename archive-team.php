@@ -4,8 +4,8 @@ Template Name: full-team
 */
   get_header();
 ?>
-<div id="primary">
-    <div id="content" class="individual-container light-stripe" role="main">
+<div id="primary" class="">
+    <div id="content" class="individual-container " role="main">
     <?php
     $mypost = array( 'post_type' => 'team','orderby' => 'menu_order');
     $loop = new WP_Query( $mypost );

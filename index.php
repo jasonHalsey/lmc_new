@@ -4,11 +4,7 @@
  * @subpackage lmc
  */
 
-if ( is_front_page() ) {
-  get_header();
-} else {
   get_header('interior');
-}
 ?>
 
 
