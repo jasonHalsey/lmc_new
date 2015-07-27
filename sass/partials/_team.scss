@@ -1,23 +1,21 @@
 div.individual-container{
 	@include outer-container;
-	
 	@include clearfix;
 	margin-top: 0.25em;
 }
 
 article.individual-member{
-	width:25%;
-	display:block;
-	float:left;
 	position: relative;
-	margin: 0;
-	padding:0;
+	@include span-columns(3);
 	@include omega;
 	img{
 		position: relative;
 		width:100%;
 		height:auto;
 		z-index: 10;
+		margin: 0;
+		padding:0;
+		display:block;
 	}
 	h3{
 		color:#ffffff;
@@ -40,6 +38,7 @@ div.individual-information{
 	text-align:center;
 	display:block;
 	width: 100%;
+	height:auto;
 	position: absolute;
 	z-index: 16;
 	bottom: 6%;

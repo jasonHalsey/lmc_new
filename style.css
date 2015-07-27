@@ -1367,24 +1367,30 @@ div.individual-container:after {
   clear: both;
 }
 
-/* line 8, sass/partials/_team.scss */
+/* line 7, sass/partials/_team.scss */
 article.individual-member {
-  width: 25%;
-  display: block;
-  float: left;
   position: relative;
-  margin: 0;
-  padding: 0;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
   margin-right: 0;
 }
-/* line 16, sass/partials/_team.scss */
+/* line 38, sass/neat/grid/_span-columns.scss */
+article.individual-member:last-child {
+  margin-right: 0;
+}
+/* line 11, sass/partials/_team.scss */
 article.individual-member img {
   position: relative;
   width: 100%;
   height: auto;
   z-index: 10;
+  margin: 0;
+  padding: 0;
+  display: block;
 }
-/* line 22, sass/partials/_team.scss */
+/* line 20, sass/partials/_team.scss */
 article.individual-member h3 {
   color: #ffffff;
   font-weight: 600;
@@ -1392,7 +1398,7 @@ article.individual-member h3 {
   padding-bottom: 0;
   text-shadow: 1px 1px 5px #969696;
 }
-/* line 29, sass/partials/_team.scss */
+/* line 27, sass/partials/_team.scss */
 article.individual-member h4 {
   color: #ffffff;
   font-size: 1.1em;
@@ -1402,17 +1408,18 @@ article.individual-member h4 {
   text-shadow: 1px 1px 5px #969696;
 }
 
-/* line 39, sass/partials/_team.scss */
+/* line 37, sass/partials/_team.scss */
 div.individual-information {
   text-align: center;
   display: block;
   width: 100%;
+  height: auto;
   position: absolute;
   z-index: 16;
   bottom: 6%;
 }
 
-/* line 48, sass/partials/_team.scss */
+/* line 47, sass/partials/_team.scss */
 article.individual-member a > .overlay {
   width: 100%;
   height: 100%;
@@ -1422,7 +1429,7 @@ article.individual-member a > .overlay {
   z-index: 14;
 }
 
-/* line 57, sass/partials/_team.scss */
+/* line 56, sass/partials/_team.scss */
 article.individual-member a:hover > .overlay {
   width: 100%;
   height: 100%;
@@ -1435,7 +1442,7 @@ article.individual-member a:hover > .overlay {
   transition: opacity 0.4s ease-in-out;
 }
 
-/* line 69, sass/partials/_team.scss */
+/* line 68, sass/partials/_team.scss */
 article.individual-team-container {
   max-width: 68em;
   margin-left: auto;
@@ -1454,7 +1461,7 @@ article.individual-team-container:after {
   display: table;
   clear: both;
 }
-/* line 73, sass/partials/_team.scss */
+/* line 72, sass/partials/_team.scss */
 article.individual-team-container div.individual-team-image {
   float: left;
   display: block;
