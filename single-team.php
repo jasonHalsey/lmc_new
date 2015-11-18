@@ -9,8 +9,6 @@
 
 get_header(); ?>
 
-
-
 <?php while ( have_posts() ) : the_post(); ?>
 	<?php if ( is_single() ) : ?>
 
@@ -20,19 +18,14 @@ get_header(); ?>
 	 			<img src="<?php echo get_post_meta( $post->ID, '_cmb2_team_image', true ); ?>" >
 	 		</div>
 		    <h2><?php echo the_title(); ?></h2>
-		    <h3>Title:</h3	> <?php echo get_post_meta( $post->ID, '_cmb2_team_title', true ); ?>
+		    <h4><?php echo get_post_meta( $post->ID, '_cmb2_team_title', true ); ?></h4>
 
-			<h3>Bio</h3>
-
-			<?php echo get_post_meta( $post->ID, '_cmb2_team_wysiwyg', true ); ?>
+			<p><?php echo get_post_meta( $post->ID, '_cmb2_team_wysiwyg', true ); ?></p>
 		</article>
 
 	<?php endif; // is_single() ?>
 
 <?php endwhile; ?>
-
-
-
 
 
 <?php wp_reset_postdata(); ?>

@@ -27,9 +27,6 @@
 		    		foreach(get_images_src('large','false') as $k => $i){
 					echo '<img src="'.$i[0].'" width="'.$i[1].'" height="'.$i[2].'" />';
 					}
-
-
-
 				?>
 
 			</div>

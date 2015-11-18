@@ -1,7 +1,7 @@
 div.individual-container{
 	@include outer-container;
 	@include clearfix;
-	margin-top: 0.25em;
+	// margin-top: 0.25em;
 }
 
 article.individual-member{
@@ -44,13 +44,19 @@ div.individual-information{
 	bottom: 6%;
 }
 
-article.individual-member a > .overlay {
+article.individual-member a > div.overlay {
     width:100%;
     height:100%;
     position:absolute;
     background-color:#000;
     opacity:0.3;
     z-index: 14;
+    top:0;
+    left:0;
+    display: block;
+    margin:0;
+    padding:0;
+
 }
 
 article.individual-member a:hover > .overlay {
@@ -67,10 +73,13 @@ article.individual-member a:hover > .overlay {
 
 article.individual-team-container{
 	@include outer-container;
-	@include omega;
+	// @include omega;
 	@include clearfix;
 	div.individual-team-image{
 		@include span-columns(6);
+		img{
+			display:block;
+		}
 	}
 }
 

@@ -37,7 +37,7 @@
 
     <div class="logo-cta">
       <div class="tag">
-        <a href="javascript:void(0)" class="logo">
+        <a href="<?php bloginfo('url');?>" class="logo">
           <img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/LMC_logo.svg" />
         </a>
 

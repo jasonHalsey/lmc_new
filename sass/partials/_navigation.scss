@@ -2,7 +2,6 @@ $large-screen: em(860);
 
 header.navigation {
   $navigation-padding: 1em;
-  // $navigation-background: #471d11;
   $navigation-color: white;
   $navigation-background: transparent;
   $navigation-color-hover: transparentize(white, 0.3);
@@ -42,7 +41,7 @@ header.navigation {
     }
   }
 
-  .logo {
+  .logo-cta {
     float: left;    
     max-height: $navigation-height;
     padding-left: $navigation-padding;
