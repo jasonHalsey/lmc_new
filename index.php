@@ -4,7 +4,8 @@
  * @subpackage lmc
  */
 
-  get_header('interior');
+  // get_header('interior');
+	get_header();
 ?>
 
 
@@ -18,7 +19,7 @@
 
     <div class="logo-cta">
       <div class="tag">
-        <a href="javascript:void(0)" class="logo">
+        <a href="<?php bloginfo('url');?>" class="logo">
           <img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/LMC_logo.svg" />
         </a>
         <div class="ctas">
@@ -47,9 +48,9 @@
     <div class="mission">
       
       <span>
-        At LMC Construction, we’re always building. We start well before we begin construction, front-loading each project with collaboration, clear communication and a can-do frame of mind. Some might say that’s a lot of “Cs.” Our clients find it’s a blueprint for success.
+        <p>At LMC Construction, we’re always building. We start well before we begin construction, front-loading each project with collaboration, clear communication and a can-do frame of mind. Some might say that’s a lot of “Cs.” Our clients find it’s a blueprint for success.</p>
 
-        Based in Tualatin, Oregon, we’ve been told we’re a little different than other general contractors and construction management companies in the area. We like that.
+        <p>Based in Tualatin, Oregon, we’ve been told we’re a little different than other general contractors and construction management companies in the area. We like that.</p>
       </span>
 
     </div>

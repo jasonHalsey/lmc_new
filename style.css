@@ -489,12 +489,12 @@ html, body {
 }
 
 /* line 15, sass/partials/_footer.scss */
-.footer-2, .push {
+.push {
   height: 17em;
 }
 @media screen and (min-width: 53.75em) {
   /* line 15, sass/partials/_footer.scss */
-  .footer-2, .push {
+  .push {
     height: 4em;
   }
 }
@@ -658,18 +658,18 @@ header.navigation .navigation-wrapper:after {
   }
 }
 /* line 44, sass/partials/_navigation.scss */
-header.navigation .logo-cta {
+header.navigation .logo-cta, header.navigation .interior-logo-cta {
   float: left;
   max-height: 120px;
   padding-left: 1em;
   padding-right: 2em;
 }
 /* line 50, sass/partials/_navigation.scss */
-header.navigation .logo-cta img {
+header.navigation .logo-cta img, header.navigation .interior-logo-cta img {
   max-height: 120px;
   padding: .8em 0;
 }
-/* line 58, sass/partials/_navigation.scss */
+/* line 60, sass/partials/_navigation.scss */
 header.navigation .navigation-menu-button {
   color: white;
   display: block;
@@ -682,27 +682,27 @@ header.navigation .navigation-menu-button {
   text-transform: uppercase;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 58, sass/partials/_navigation.scss */
+  /* line 60, sass/partials/_navigation.scss */
   header.navigation .navigation-menu-button {
     display: none;
   }
 }
-/* line 73, sass/partials/_navigation.scss */
+/* line 75, sass/partials/_navigation.scss */
 header.navigation .navigation-menu-button:hover {
   color: rgba(255, 255, 255, 0.7);
 }
-/* line 80, sass/partials/_navigation.scss */
+/* line 82, sass/partials/_navigation.scss */
 header.navigation .nav {
   z-index: 9999999;
   float: none;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 80, sass/partials/_navigation.scss */
+  /* line 82, sass/partials/_navigation.scss */
   header.navigation .nav {
     float: left;
   }
 }
-/* line 88, sass/partials/_navigation.scss */
+/* line 90, sass/partials/_navigation.scss */
 header.navigation ul#menu-primary {
   -webkit-transform-style: preserve-3d;
   clear: both;
@@ -714,14 +714,14 @@ header.navigation ul#menu-primary {
   z-index: 9999;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 88, sass/partials/_navigation.scss */
+  /* line 90, sass/partials/_navigation.scss */
   header.navigation ul#menu-primary {
     display: inline;
     margin: 0;
     padding: 0;
   }
 }
-/* line 107, sass/partials/_navigation.scss */
+/* line 109, sass/partials/_navigation.scss */
 header.navigation ul li.nav-link {
   background: transparent;
   display: block;
@@ -734,7 +734,7 @@ header.navigation ul li.nav-link {
   font-family: "Oswald", sans-serif;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 107, sass/partials/_navigation.scss */
+  /* line 109, sass/partials/_navigation.scss */
   header.navigation ul li.nav-link {
     background: transparent;
     display: inline;
@@ -743,7 +743,7 @@ header.navigation ul li.nav-link {
     width: auto;
   }
 }
-/* line 126, sass/partials/_navigation.scss */
+/* line 128, sass/partials/_navigation.scss */
 header.navigation ul li.nav-link a {
   color: white;
   display: inline-block;
@@ -752,43 +752,43 @@ header.navigation ul li.nav-link a {
   font-size: 1.25em;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 126, sass/partials/_navigation.scss */
+  /* line 128, sass/partials/_navigation.scss */
   header.navigation ul li.nav-link a {
     padding-right: 1em;
   }
 }
-/* line 136, sass/partials/_navigation.scss */
+/* line 138, sass/partials/_navigation.scss */
 header.navigation ul li.nav-link a:hover {
   color: rgba(255, 255, 255, 0.7);
 }
-/* line 142, sass/partials/_navigation.scss */
+/* line 144, sass/partials/_navigation.scss */
 header.navigation .active-nav-item a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   padding-bottom: 3px;
 }
-/* line 149, sass/partials/_navigation.scss */
+/* line 151, sass/partials/_navigation.scss */
 header.navigation li.more.nav-link {
   padding-right: 0;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 149, sass/partials/_navigation.scss */
+  /* line 151, sass/partials/_navigation.scss */
   header.navigation li.more.nav-link {
     padding-right: 1em;
   }
 }
-/* line 156, sass/partials/_navigation.scss */
+/* line 158, sass/partials/_navigation.scss */
 header.navigation li.more.nav-link > ul > li:first-child a {
   padding-top: 1em;
 }
-/* line 160, sass/partials/_navigation.scss */
+/* line 162, sass/partials/_navigation.scss */
 header.navigation li.more.nav-link a {
   margin-right: 1em;
 }
-/* line 164, sass/partials/_navigation.scss */
+/* line 166, sass/partials/_navigation.scss */
 header.navigation li.more.nav-link > a {
   padding-right: 0.6em;
 }
-/* line 168, sass/partials/_navigation.scss */
+/* line 170, sass/partials/_navigation.scss */
 header.navigation li.more.nav-link > a:after {
   position: absolute;
   top: auto;
@@ -798,51 +798,51 @@ header.navigation li.more.nav-link > a:after {
   content: '\25BE';
   color: white;
 }
-/* line 175, sass/partials/_navigation.scss */
+/* line 177, sass/partials/_navigation.scss */
 header.navigation li.more {
   overflow: visible;
   padding-right: 0;
 }
-/* line 179, sass/partials/_navigation.scss */
+/* line 181, sass/partials/_navigation.scss */
 header.navigation li.more a {
   padding-right: .8em;
 }
-/* line 183, sass/partials/_navigation.scss */
+/* line 185, sass/partials/_navigation.scss */
 header.navigation li.more > a {
   padding-right: 1.6em;
   position: relative;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 183, sass/partials/_navigation.scss */
+  /* line 185, sass/partials/_navigation.scss */
   header.navigation li.more > a {
     margin-right: 1em;
   }
 }
-/* line 191, sass/partials/_navigation.scss */
+/* line 193, sass/partials/_navigation.scss */
 header.navigation li.more > a:after {
   content: '›';
   font-size: 1.2em;
   position: absolute;
   right: 0.5em;
 }
-/* line 199, sass/partials/_navigation.scss */
+/* line 201, sass/partials/_navigation.scss */
 header.navigation li.more:hover > .sub-menu {
   display: block;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 175, sass/partials/_navigation.scss */
+  /* line 177, sass/partials/_navigation.scss */
   header.navigation li.more {
     padding-right: .8em;
     position: relative;
   }
 }
-/* line 209, sass/partials/_navigation.scss */
+/* line 211, sass/partials/_navigation.scss */
 header.navigation ul.sub-menu {
   display: none;
   padding-left: 0;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 209, sass/partials/_navigation.scss */
+  /* line 211, sass/partials/_navigation.scss */
   header.navigation ul.sub-menu {
     left: -1em;
     position: absolute;
@@ -850,35 +850,35 @@ header.navigation ul.sub-menu {
   }
 }
 @media screen and (min-width: 53.75em) {
-  /* line 219, sass/partials/_navigation.scss */
+  /* line 221, sass/partials/_navigation.scss */
   header.navigation ul.sub-menu .sub-menu {
     left: 11.8em;
     top: 0;
   }
 }
-/* line 226, sass/partials/_navigation.scss */
+/* line 228, sass/partials/_navigation.scss */
 header.navigation ul.sub-menu li {
   display: block;
   padding-right: 0;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 226, sass/partials/_navigation.scss */
+  /* line 228, sass/partials/_navigation.scss */
   header.navigation ul.sub-menu li {
     line-height: 92.30769px;
   }
-  /* line 233, sass/partials/_navigation.scss */
+  /* line 235, sass/partials/_navigation.scss */
   header.navigation ul.sub-menu li:first-child > a {
     border-top-left-radius: 0.1875em;
     border-top-right-radius: 0.1875em;
   }
-  /* line 238, sass/partials/_navigation.scss */
+  /* line 240, sass/partials/_navigation.scss */
   header.navigation ul.sub-menu li:last-child > a {
     border-bottom-left-radius: 0.1875em;
     border-bottom-right-radius: 0.1875em;
     padding-bottom: .7em;
   }
 }
-/* line 245, sass/partials/_navigation.scss */
+/* line 247, sass/partials/_navigation.scss */
 header.navigation ul.sub-menu li a {
   background-color: transparent;
   display: inline-block;
@@ -886,7 +886,7 @@ header.navigation ul.sub-menu li a {
   width: 100%;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 245, sass/partials/_navigation.scss */
+  /* line 247, sass/partials/_navigation.scss */
   header.navigation ul.sub-menu li a {
     background-color: transparent;
     padding-left: 1em;
@@ -894,7 +894,7 @@ header.navigation ul.sub-menu li a {
     width: 12em;
   }
 }
-/* line 263, sass/partials/_navigation.scss */
+/* line 265, sass/partials/_navigation.scss */
 header.navigation .navigation-tools {
   display: block;
   padding-right: 1em;
@@ -909,14 +909,14 @@ header.navigation .navigation-tools:after {
   clear: both;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 263, sass/partials/_navigation.scss */
+  /* line 265, sass/partials/_navigation.scss */
   header.navigation .navigation-tools {
     background: transparent;
     float: right;
     clear: none;
   }
 }
-/* line 278, sass/partials/_navigation.scss */
+/* line 280, sass/partials/_navigation.scss */
 header.navigation a.sign-up {
   margin-top: 1.2em;
   float: right;
@@ -933,25 +933,25 @@ header.navigation a.sign-up {
   padding: .4em .5em;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 278, sass/partials/_navigation.scss */
+  /* line 280, sass/partials/_navigation.scss */
   header.navigation a.sign-up {
     padding: .5em 1em;
   }
 }
-/* line 295, sass/partials/_navigation.scss */
+/* line 297, sass/partials/_navigation.scss */
 header.navigation a.sign-up:hover {
   background: #6f99d5;
 }
-/* line 302, sass/partials/_navigation.scss */
+/* line 304, sass/partials/_navigation.scss */
 header.navigation .search-bar {
   padding: .85em .6em;
   float: left;
 }
-/* line 309, sass/partials/_navigation.scss */
+/* line 311, sass/partials/_navigation.scss */
 header.navigation .search-bar .search-and-submit {
   position: relative;
 }
-/* line 312, sass/partials/_navigation.scss */
+/* line 314, sass/partials/_navigation.scss */
 header.navigation .search-bar .search-and-submit input[type=search] {
   background: rgba(13, 13, 13, 0);
   border: 1px solid transparent;
@@ -963,12 +963,12 @@ header.navigation .search-bar .search-and-submit input[type=search] {
   margin: 0;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 312, sass/partials/_navigation.scss */
+  /* line 314, sass/partials/_navigation.scss */
   header.navigation .search-bar .search-and-submit input[type=search] {
     width: 100%;
   }
 }
-/* line 327, sass/partials/_navigation.scss */
+/* line 329, sass/partials/_navigation.scss */
 header.navigation .search-bar .search-and-submit button[type=submit] {
   border: 1px solid rgba(3, 3, 3, 0);
   border-radius: 3px;
@@ -1037,19 +1037,19 @@ header.navigation .search-bar .search-and-submit button[type=submit]:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
-/* line 337, sass/partials/_navigation.scss */
+/* line 339, sass/partials/_navigation.scss */
 header.navigation .search-bar .search-and-submit button[type=submit] img {
   height: 12px;
   opacity: .7;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 302, sass/partials/_navigation.scss */
+  /* line 304, sass/partials/_navigation.scss */
   header.navigation .search-bar {
     width: 16em;
     position: relative;
     display: inline-block;
   }
-  /* line 349, sass/partials/_navigation.scss */
+  /* line 351, sass/partials/_navigation.scss */
   header.navigation .search-bar input {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1058,7 +1058,15 @@ header.navigation .search-bar .search-and-submit button[type=submit] img {
   }
 }
 
-/* line 358, sass/partials/_navigation.scss */
+/* line 360, sass/partials/_navigation.scss */
+.interior-logo-cta {
+  width: 20%;
+  height: auto;
+  float: left;
+  margin-left: 12%;
+}
+
+/* line 369, sass/partials/_navigation.scss */
 .effect6 {
   position: relative;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -1066,7 +1074,7 @@ header.navigation .search-bar .search-and-submit button[type=submit] img {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
-/* line 364, sass/partials/_navigation.scss */
+/* line 375, sass/partials/_navigation.scss */
 .effect6:before, .effect6:after {
   content: "";
   position: absolute;
@@ -1128,7 +1136,7 @@ body {
 }
 
 /* line 7, sass/partials/_home.scss */
-#trans-bars {
+#trans-bars, #interior-trans-bars {
   width: 100%;
   margin: 0 auto 0;
   position: relative;
@@ -1138,7 +1146,19 @@ body {
 }
 
 /* line 17, sass/partials/_home.scss */
-.background-bar {
+#interior-trans-bars {
+  padding-top: 0.35%;
+  background-color: #471d11;
+}
+/* line 15, sass/bourbon/addons/_clearfix.scss */
+#interior-trans-bars:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 24, sass/partials/_home.scss */
+.background-bar, .interior-background-bar {
   height: 120px;
   width: 100%;
   background-color: #471d11;
@@ -1147,20 +1167,25 @@ body {
   left: 0;
 }
 
-/* line 26, sass/partials/_home.scss */
+/* line 33, sass/partials/_home.scss */
+.interior-background-bar {
+  height: 128px;
+}
+
+/* line 38, sass/partials/_home.scss */
 #main_slider {
   visibility: hidden;
 }
-/* line 29, sass/partials/_home.scss */
+/* line 41, sass/partials/_home.scss */
 #main_slider div {
   width: 100%;
 }
-/* line 33, sass/partials/_home.scss */
+/* line 45, sass/partials/_home.scss */
 #main_slider img {
   width: 100%;
 }
 
-/* line 37, sass/partials/_home.scss */
+/* line 49, sass/partials/_home.scss */
 #holder {
   position: absolute;
   top: 120px;
@@ -1169,17 +1194,17 @@ body {
   z-index: 5;
 }
 
-/* line 44, sass/partials/_home.scss */
+/* line 56, sass/partials/_home.scss */
 .logo {
   text-align: center;
 }
-/* line 46, sass/partials/_home.scss */
+/* line 58, sass/partials/_home.scss */
 .logo img {
   display: block;
   margin: 0.5em auto 2.0em;
 }
 
-/* line 51, sass/partials/_home.scss */
+/* line 63, sass/partials/_home.scss */
 .ctas {
   padding: 0px 0.75em 0;
   width: 100%;
@@ -1187,7 +1212,7 @@ body {
   font-weight: 400;
   font-size: 1.25em;
 }
-/* line 57, sass/partials/_home.scss */
+/* line 69, sass/partials/_home.scss */
 .ctas a {
   display: block;
   background-color: #0b5359;
@@ -1198,15 +1223,15 @@ body {
   width: 100%;
   position: relative;
 }
-/* line 66, sass/partials/_home.scss */
+/* line 78, sass/partials/_home.scss */
 .ctas a:hover {
   background-color: #05292c;
 }
-/* line 68, sass/partials/_home.scss */
+/* line 80, sass/partials/_home.scss */
 .ctas a:hover:after {
   background-color: #0b5359;
 }
-/* line 72, sass/partials/_home.scss */
+/* line 84, sass/partials/_home.scss */
 .ctas a:after {
   content: ">";
   display: inline;
@@ -1220,7 +1245,7 @@ body {
   line-height: 2.3em;
 }
 
-/* line 86, sass/partials/_home.scss */
+/* line 98, sass/partials/_home.scss */
 .mission {
   display: block;
   background-color: rgba(0, 0, 0, 0.4);
@@ -1232,14 +1257,14 @@ body {
   bottom: 8%;
   z-index: 8;
 }
-/* line 96, sass/partials/_home.scss */
+/* line 108, sass/partials/_home.scss */
 .mission span {
   display: block;
   width: 100%;
   max-width: 40em;
 }
 
-/* line 103, sass/partials/_home.scss */
+/* line 115, sass/partials/_home.scss */
 .tag {
   display: block;
   background-color: rgba(0, 0, 0, 0.4);
@@ -1252,7 +1277,7 @@ body {
   z-index: 9;
   max-width: 266px;
 }
-/* line 114, sass/partials/_home.scss */
+/* line 126, sass/partials/_home.scss */
 .tag > span {
   display: block;
   position: absolute;
@@ -1264,16 +1289,17 @@ body {
   text-transform: uppercase;
   padding: 0 1.1em;
 }
-/* line 124, sass/partials/_home.scss */
+/* line 136, sass/partials/_home.scss */
 .tag > span span {
   color: #fff;
 }
 
-/* line 130, sass/partials/_home.scss */
+/* line 142, sass/partials/_home.scss */
 .home_content {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 4.0em;
 }
 /* line 15, sass/bourbon/addons/_clearfix.scss */
 .home_content:after {
@@ -1281,7 +1307,13 @@ body {
   display: table;
   clear: both;
 }
-/* line 132, sass/partials/_home.scss */
+/* line 15, sass/bourbon/addons/_clearfix.scss */
+.home_content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 146, sass/partials/_home.scss */
 .home_content .home_content-text {
   float: left;
   display: block;
@@ -1293,14 +1325,14 @@ body {
 .home_content .home_content-text:last-child {
   margin-right: 0;
 }
-/* line 134, sass/partials/_home.scss */
+/* line 148, sass/partials/_home.scss */
 .home_content .home_content-text h2 {
   font-family: "Oswald", sans-serif;
   padding: 0.5em 0;
   font-weight: 300;
   text-transform: uppercase;
 }
-/* line 142, sass/partials/_home.scss */
+/* line 156, sass/partials/_home.scss */
 .home_content .home_content-side {
   float: left;
   display: block;
@@ -1312,17 +1344,23 @@ body {
 .home_content .home_content-side:last-child {
   margin-right: 0;
 }
-/* line 145, sass/partials/_home.scss */
+/* line 159, sass/partials/_home.scss */
 .home_content .home_content-side img {
   margin: 1.5em 0;
 }
 
-/* line 152, sass/partials/_home.scss */
+/* line 166, sass/partials/_home.scss */
 .dark-stripe {
   background-color: #1c1c1c;
   padding: 1.0em 0;
 }
-/* line 155, sass/partials/_home.scss */
+/* line 15, sass/bourbon/addons/_clearfix.scss */
+.dark-stripe:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 170, sass/partials/_home.scss */
 .dark-stripe h2 {
   display: block;
   background-color: #242424;
@@ -1335,14 +1373,20 @@ body {
   font-weight: 300;
 }
 
-/* line 167, sass/partials/_home.scss */
+/* line 182, sass/partials/_home.scss */
 .light-stripe {
   background-color: #303030;
   padding: 1.0em 0;
   color: #fff;
 }
+/* line 15, sass/bourbon/addons/_clearfix.scss */
+.light-stripe:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-/* line 172, sass/partials/_home.scss */
+/* line 188, sass/partials/_home.scss */
 .nopad {
   padding-top: 1px !important;
 }

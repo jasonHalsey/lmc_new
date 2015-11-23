@@ -27,4 +27,41 @@
 	<![endif]-->
 	<?php wp_head(); ?>
 </head>
+<?php
+/**
+ * @package WordPress
+ * @subpackage lmc
+ */
 
+  // get_header('interior');
+  get_header();
+?>
+
+
+
+<div class="wrapper-for-content-outside-of-footer">
+<body <?php body_class(); ?>>
+ <!--  <div class="interior-background-bar"></div> -->
+  <section id="interior-trans-bars">
+
+    <!--#########################################################################################################-->
+
+    <div class="interior-logo-cta">
+        <a href="<?php bloginfo('url');?>" class="logo">
+          <img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/LMC_logo.svg" />
+        </a>
+    </div>
+
+    <!--#########################################################################################################-->
+
+    <header class="navigation ">
+      <div class="navigation-wrapper ">
+        <a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+        <div class="nav">
+          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+        </div>
+      </div>
+    </header>
+
+    <!--#########################################################################################################-->
+  </section>

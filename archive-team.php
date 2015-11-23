@@ -2,7 +2,7 @@
 /*
 Template Name: full-team
 */
-  get_header();
+  get_header('interior');
 ?>
 <div id="primary" class="">
     <div id="content" class="individual-container " role="main">

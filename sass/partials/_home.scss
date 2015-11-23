@@ -14,6 +14,13 @@ body {
 	right:0;
 }
 
+#interior-trans-bars{
+	@extend #trans-bars;
+	@include clearfix;
+	padding-top: 0.35%;
+	background-color: #471d11;
+}
+
 .background-bar{
 	height:120px;
 	width:100%;
@@ -21,6 +28,11 @@ body {
 	position:absolute;
 	top:0;
 	left:0;
+}
+
+.interior-background-bar{
+	@extend .background-bar;
+	height: 128px;
 }
 
 #main_slider{
@@ -129,6 +141,8 @@ body {
 
 .home_content{
 	@include outer-container();
+	@include clearfix;
+	margin-bottom: 4.0em;
 	.home_content-text{
 		@include span-columns(8);
 		h2{
@@ -152,6 +166,7 @@ body {
 .dark-stripe{
 	background-color: $dk-grey;
 	padding:1.0em 0;
+	@include clearfix;
 	h2{
 		display:block;
 		background-color: $dk-grey-highlight;
@@ -168,6 +183,7 @@ body {
 	background-color: $light-grey;
 	padding:1.0em 0;
 	color: #fff;
+	@include clearfix;
 }
 .nopad{
 	padding-top: 1px!important;

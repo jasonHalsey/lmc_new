@@ -53,6 +53,8 @@ header.navigation {
     }
   }
 
+
+
   // Mobile view
 
   .navigation-menu-button {
@@ -352,6 +354,15 @@ header.navigation {
       }
     }
   }
+}
+
+
+.interior-logo-cta{
+  @extend .logo-cta;
+  width:20%;
+  height:auto;
+  float:left;
+  margin-left: 12%;
 }
 
 // Navigation Drop-Shadow

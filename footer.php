@@ -8,11 +8,11 @@
  * @subpackage lmc
  */
 ?>
-
+</div><!-- #page -->
 		<footer id="colophon" class="site-footer footer-2" role="contentinfo">
 			<div id="footer-container">	
 			  <div class="footer-logo">
-			    <a href="javascript:void(0)">
+			    <a href="<?php bloginfo('url');?>">
 			    	<img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/LMC_shield.svg">
 			    </a>
 			  </div>
@@ -27,7 +27,7 @@
 			    </div>
 			</div>
 		</footer><!-- #colophon -->
-	</div><!-- #page -->
+	
 	<div class="push"></div>
 
 
