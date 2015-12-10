@@ -20,7 +20,6 @@
 			    <p>
 			    	<?php 
 			    		echo wpautop(get_post_meta( $post->ID, '_cmb2_portfolio_description', true )); 
-			    		// echo wpautop($quote);
 			    	?>
 			    </p>
 
@@ -44,4 +43,4 @@
 
 <?php wp_reset_postdata(); ?>
 
-<?php get_footer(); ?>`
+<?php get_footer(); ?>

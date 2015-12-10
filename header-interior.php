@@ -30,8 +30,8 @@
 
 
 
-<div class="wrapper-for-content-outside-of-footer">
-<body <?php body_class(); ?>>
+
+<body <?php body_class('Site'); ?> >
  <!--  <div class="interior-background-bar"></div> -->
   <section id="interior-trans-bars">
 

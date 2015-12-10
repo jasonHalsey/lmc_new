@@ -8,7 +8,7 @@
  * @subpackage lmc
  */
 ?>
-</div><!-- #page -->
+
 		<footer id="colophon" class="site-footer footer-2" role="contentinfo">
 			<div id="footer-container">	
 			  <div class="footer-logo">
@@ -16,23 +16,18 @@
 			    	<img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/LMC_shield.svg">
 			    </a>
 			  </div>
-			  <?php wp_nav_menu( array( 'theme_location' => 'secondary-menu', 'menu_class' => 'nav-menu' ) ); ?>
-
-
-			    <div class="footer-secondary-links">
-			      <ul>
-			        <li><a href="javascript:void(0)">Terms and Conditions</a></li>
-			        <li><a href="javascript:void(0)">Privacy Policy</a></li>
-			      </ul>
-			    </div>
+			 		 <?php wp_nav_menu( array( 'theme_location' => 'secondary-menu', 'menu_class' => 'nav-menu' ) ); ?>
+		    <div class="footer-secondary-links">
+		      <ul>
+		        <li><a href="javascript:void(0)">Terms and Conditions</a></li>
+		        <li><a href="javascript:void(0)">Privacy Policy</a></li>
+		      </ul>
+		    </div>
 			</div>
 		</footer><!-- #colophon -->
 	
-	<div class="push"></div>
-
-
 	<?php wp_footer(); ?>
 </body>
-</div><!-- #sticky-footer -->
+
 </html>
 
