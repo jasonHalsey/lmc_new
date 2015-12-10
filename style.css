@@ -1125,6 +1125,25 @@ div.portfolio-bg {
   height: auto;
 }
 
+/* line 24, sass/partials/_structure.scss */
+.single-contain {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 15, sass/bourbon/addons/_clearfix.scss */
+.single-contain:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 15, sass/bourbon/addons/_clearfix.scss */
+.single-contain:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* line 1, sass/partials/_home.scss */
 html {
   background-color: #141414;

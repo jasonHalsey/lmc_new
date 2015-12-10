@@ -27,15 +27,6 @@
 	<![endif]-->
 	<?php wp_head(); ?>
 </head>
-<?php
-/**
- * @package WordPress
- * @subpackage lmc
- */
-
-  // get_header('interior');
-  get_header();
-?>
 
 
 

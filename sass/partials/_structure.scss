@@ -20,3 +20,8 @@ div.portfolio-bg{
 		height: auto;
 	}
 }
+
+.single-contain{
+	@include outer-container;
+	@include clearfix;
+}

@@ -2,6 +2,8 @@ jQuery(document).ready(function() {
 	
 	jQuery('#main_slider').show();
 
+//	jQuery('.portfolio-bg').cycle();
+
 
 	// Refills Navigation Script //
 

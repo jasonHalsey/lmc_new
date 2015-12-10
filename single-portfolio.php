@@ -9,39 +9,39 @@
 
  get_header('interior'); ?>
 
-<h2>This is single portfolio</h2>
+<div class="single-contain">
 
-<?php while ( have_posts() ) : the_post(); ?>
-	<?php if ( is_single() ) : ?>
+	<?php while ( have_posts() ) : the_post(); ?>
+		<?php if ( is_single() ) : ?>
 
-	 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-		    <h2><?php echo the_title(); ?></h2>
-		    <p><?php echo get_post_meta( $post->ID, '_cmb2_portfolio_description', true ); ?></p>
+			    <h2><?php echo the_title(); ?></h2>
+			    <p>
+			    	<?php 
+			    		echo wpautop(get_post_meta( $post->ID, '_cmb2_portfolio_description', true )); 
+			    		// echo wpautop($quote);
+			    	?>
+			    </p>
 
+			    
+			    <div class="portfolio-bg">
+			    	<?php
+			    		foreach(get_images_src('large','false') as $k => $i){
+							echo '<img src="'.$i[0].'" width="'.$i[1].'" height="'.$i[2].'" />';
+							}
+						?>
+					</div>
 
-		    <?php echo get_post_meta( $post->ID, '_cmb2_portfolio_checkbox', true ); ?>
-		    
-		    <div class="portfolio-bg">
-		    	<?php
-		    		foreach(get_images_src('large','false') as $k => $i){
-					echo '<img src="'.$i[0].'" width="'.$i[1].'" height="'.$i[2].'" />';
-					}
-				?>
+			</article>
 
-			</div>
-			
+		<?php endif; // is_single() ?>
 
-		</article>
+	<?php endwhile; ?>
 
-	<?php endif; // is_single() ?>
-
-<?php endwhile; ?>
-
-
-
+</div> <!-- End single-contain -->
 
 
 <?php wp_reset_postdata(); ?>
 
-<?php get_footer(); ?>
+<?php get_footer(); ?>`
