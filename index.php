@@ -38,7 +38,7 @@
       <div class="navigation-wrapper ">
         <a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
         <div class="nav">
-          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu show' ) ); ?>
         </div>
       </div>
     </header>

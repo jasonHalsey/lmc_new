@@ -9,6 +9,7 @@
 
 get_header('interior'); ?>
 
+<div class="single-contain Site-content">
 <?php while ( have_posts() ) : the_post(); ?>
 	<?php if ( is_single() ) : ?>
 
@@ -27,7 +28,7 @@ get_header('interior'); ?>
 
 <?php endwhile; ?>
 
-
+</div> <!-- End single-contain -->
 <?php wp_reset_postdata(); ?>
 
 <?php get_footer(); ?>

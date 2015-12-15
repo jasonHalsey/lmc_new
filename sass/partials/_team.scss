@@ -1,4 +1,5 @@
 div.individual-container{
+	width:100%;
 	@include outer-container;
 	@include clearfix;
 	// margin-top: 0.25em;
@@ -6,8 +7,13 @@ div.individual-container{
 
 article.individual-member{
 	position: relative;
-	@include span-columns(3);
-	@include omega;
+	width:25%;
+	display: block;
+	float:left;
+	margin-right: 0;
+	@include media($tablet) {
+		width:50%;
+	}
 	img{
 		position: relative;
 		width:100%;
@@ -23,6 +29,9 @@ article.individual-member{
 		line-height: 1.0em;
 		padding-bottom: 0;
 		text-shadow: 1px 1px 5px rgba(150, 150, 150, 1);
+		@include media($mobile) {
+			font-size:1.3em;
+		}
 	}
 	h4{
 		color:#ffffff;
@@ -75,6 +84,9 @@ article.individual-team-container{
 	@include outer-container;
 	// @include omega;
 	@include clearfix;
+	@include media($tablet) {
+		padding: 1.0em;
+	}
 	div.individual-team-image{
 		@include span-columns(6);
 		img{

@@ -58,6 +58,9 @@ body {
 	img{
 		display: block;
 		margin: 0.5em auto 2.0em;
+		@include media ($mobile) {
+			margin: 0.5em auto 0.5em;
+		}
 	}
 }
 .ctas{
@@ -126,7 +129,7 @@ body {
 	> span{
 		display:block;
 		position: absolute;
-		bottom:10.3%;
+		bottom:12.3%;
 		font-family: $primary-font;
 		font-weight: 700;
 		font-size: 1.45em;

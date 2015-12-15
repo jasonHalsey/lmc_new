@@ -9,7 +9,7 @@
 
  get_header('interior'); ?>
 
-<div class="single-contain">
+<div class="single-contain Site-content">
 
 	<?php while ( have_posts() ) : the_post(); ?>
 		<?php if ( is_single() ) : ?>

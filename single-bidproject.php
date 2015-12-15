@@ -7,8 +7,9 @@
  * @since lmc 1.0
  */
 
-get_header(); ?>
+get_header('interior'); ?>
 
+<div class="single-contain Site-content">
 
 <?php while ( have_posts() ) : the_post(); ?>
 
@@ -62,6 +63,7 @@ get_header(); ?>
 	<?php endif; // is_single() ?>
 
 <?php endwhile; ?>
+</div> <!-- End single-contain -->
 
 <?php wp_reset_postdata(); ?>
 

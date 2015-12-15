@@ -45,14 +45,15 @@
 
     <!--#########################################################################################################-->
 
-    <header class="navigation ">
-      <div class="navigation-wrapper ">
-        <a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
-        <div class="nav">
-          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-        </div>
-      </div>
-    </header>
+<header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu"><img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/menu-open-large.png" /></a>
+    <nav role="navigation">
+      <?php wp_nav_menu( array( 'menu_id' => 'js-navigation-menu', 'theme_location' => 'primary', 'menu_class' => 'navigation-menu show' ) ); ?>
+    </nav>    
+  </div>
+</header>
+
 
     <!--#########################################################################################################-->
   </section>
