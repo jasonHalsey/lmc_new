@@ -1,0 +1,39 @@
+div.all_projects{
+	position: relative;
+	padding-bottom: 2.0em;
+	@include outer-container();
+}
+article.project_container{
+	@include outer-container();
+	position: relative;
+	padding:1.0em;
+	.date-block{
+		display: block;
+		width: 6.0em;
+		background-color: $dk-grey;
+		padding:0.5em;
+		position: absolute;
+		top:0;
+		left:1.0em;
+		text-align: center;
+		z-index: 667;
+	}
+	.project_information{
+		display: block;
+		width:97%;
+		background-color: $light-grey;
+		position: relative;
+		top:0;
+		right:0;
+		margin: 0 0 0 2.0em;
+		z-index: 666;
+		padding: 1.0em 1.0em 1.0em 6.5em;
+		@include media ($mobile) {
+			right:1.0em;
+		}
+	}
+	h4{
+		color:#fff;
+		font-weight: 400;
+	}
+}

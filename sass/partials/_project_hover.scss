@@ -6,7 +6,10 @@ $medium-screen: em(640);
 }
 
 .single-project{
-  @include span-columns(4)
+  @include span-columns(4);
+  @include media ($mobile) {
+    @include span-columns(12);
+  }
 }
 .hover-tile-outer {
 

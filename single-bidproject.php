@@ -40,23 +40,16 @@ get_header('interior'); ?>
 
 			?>
 
+			<h3>Project Summary</h3>
+			<?php 
+				echo wpautop(get_post_meta( $post->ID, '_cmb2_project_work_summary', true )); 
+			?>
+
 			<h3>Plans</h3>
 				<?php $dropFolder = get_post_meta( $post->ID, '_cmb2_project_dropBox', true );
 				echo do_shortcode("$dropFolder"); ?>
 			
-			<div id="maps">
-		    	<?php
 
-					if ( function_exists( 'pronamic_google_maps' ) ) {
-					    pronamic_google_maps( array(
-					        'width'  => 1200,
-					        'height' => 300
-					    ) );
-					}
-
-				?>
-			</div>
-			
 
 		</article>
 

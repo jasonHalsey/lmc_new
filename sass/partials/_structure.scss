@@ -29,4 +29,7 @@ div.portfolio-bg{
 .single-contain{
 	@include outer-container;
 	@include clearfix;
+		@include media ($mobile) {
+		padding: 1.5em;
+	}
 }
