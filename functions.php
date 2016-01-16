@@ -131,6 +131,33 @@ function post_type_portfolio()
   flush_rewrite_rules();
 };  
 
+// ----------------- Creates Services Post Type
+add_action('init', 'post_type_services');
+function post_type_services() 
+{
+  $labels = array(
+    'name' => _x('LMC Services', 'post type general name'),
+    'singular_name' => _x('Service', 'post type singular name'),
+    'add_new' => _x('Add New Service', 'service'),
+    'add_new_item' => __('Add New Service')
+  );
+ 
+ $args = array(
+    'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true, 
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'service' ),
+    'capability_type' => 'post',
+    'hierarchical' => true,
+    'menu_position' => null,	
+    'supports' => array('title','thumbnail')
+    ); 
+  register_post_type('service',$args);
+  flush_rewrite_rules();
+};  
+
 /**
  * Include and setup custom metaboxes and fields. (make sure you copy this file to outside the CMB directory)
  *
@@ -327,6 +354,31 @@ function cmb2_lmc_metaboxes( array $meta_boxes ) {
 		),
 	);	
 
+
+	/**
+	 * Services Metabox Layout
+	 */
+	$meta_boxes['services_metabox'] = array(
+		'id'            => 'services_metabox',
+		'title'         => __( 'LMC Services', 'cmb2' ),
+		'object_types'  => array( 'service' ), // Post type
+		'context'       => 'normal',
+		'priority'      => 'high',
+		'show_names'    => true, // Show field names on the left
+		// 'cmb_styles' => true, // Enqueue the CMB stylesheet on the frontend
+		'fields'        => array(
+			
+			array(
+				'name' => __( 'LMC Service', 'cmb2' ),
+				'desc' => __( ' ', 'cmb2' ),
+				'id'   => $prefix . 'service_description',
+				'type' => 'wysiwyg',
+				// 'repeatable' => true,
+			),
+			
+		),
+	);	
+
 	return $meta_boxes;
 }
 
@@ -334,7 +386,7 @@ function cmb2_lmc_metaboxes( array $meta_boxes ) {
 
     add_filter('images_cpt','my_image_cpt');
     function my_image_cpt(){
-        $cpts = array('page','portfolio');
+        $cpts = array('page','portfolio','service');
         return $cpts;
     }
 
@@ -350,6 +402,10 @@ function my_list_images($list_images, $cpt){
             'image4' => '_image4',
             'image5' => '_image5',
             'image6' => '_image6'
+        );
+    elseif ($typenow == 'service') 
+    		$picts = array(
+            'image1' => '_image1'
         );
     else
         $picts = array(
