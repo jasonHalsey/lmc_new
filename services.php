@@ -12,8 +12,8 @@ Template Name: services
     $loop = new WP_Query( $mypost );
     ?>
     <?php while ( $loop->have_posts() ) : $loop->the_post();?>
-        
     	<section class="module_brand content_brand">
+    	
 				<div class="container abbot_top ">
 					<div class="brand-content-wrapper">
 						<div class="brand-content">
