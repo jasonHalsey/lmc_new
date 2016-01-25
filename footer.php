@@ -17,12 +17,7 @@
 			    </a>
 			  </div>
 			 		 <?php wp_nav_menu( array( 'theme_location' => 'secondary-menu', 'menu_class' => 'nav-menu' ) ); ?>
-		    <div class="footer-secondary-links">
-		      <ul>
-		        <li><a href="javascript:void(0)">Terms and Conditions</a></li>
-		        <li><a href="javascript:void(0)">Privacy Policy</a></li>
-		      </ul>
-		    </div>
+		   
 			</div>
 		</footer><!-- #colophon -->
 	

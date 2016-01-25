@@ -1448,7 +1448,16 @@ body {
   padding-top: 1px !important;
 }
 
-/* line 1, sass/partials/_team.scss */
+/* line 2, sass/partials/_team.scss */
+body.page-template-archive-team #primary {
+  background-color: #1c1c1c;
+}
+/* line 5, sass/partials/_team.scss */
+body.page-template-archive-team h2 {
+  margin-bottom: 0.5em;
+}
+
+/* line 10, sass/partials/_team.scss */
 div.individual-container {
   width: 100%;
   max-width: 68em;
@@ -1468,7 +1477,7 @@ div.individual-container:after {
   clear: both;
 }
 
-/* line 8, sass/partials/_team.scss */
+/* line 17, sass/partials/_team.scss */
 article.individual-member {
   position: relative;
   width: 25%;
@@ -1477,12 +1486,12 @@ article.individual-member {
   margin-right: 0;
 }
 @media screen and (max-width: 979px) {
-  /* line 8, sass/partials/_team.scss */
+  /* line 17, sass/partials/_team.scss */
   article.individual-member {
     width: 50%;
   }
 }
-/* line 17, sass/partials/_team.scss */
+/* line 26, sass/partials/_team.scss */
 article.individual-member img {
   position: relative;
   width: 100%;
@@ -1492,7 +1501,7 @@ article.individual-member img {
   padding: 0;
   display: block;
 }
-/* line 26, sass/partials/_team.scss */
+/* line 35, sass/partials/_team.scss */
 article.individual-member h3 {
   color: #ffffff;
   font-weight: 600;
@@ -1501,12 +1510,12 @@ article.individual-member h3 {
   text-shadow: 1px 1px 5px #969696;
 }
 @media screen and (max-width: 767px) {
-  /* line 26, sass/partials/_team.scss */
+  /* line 35, sass/partials/_team.scss */
   article.individual-member h3 {
     font-size: 1.3em;
   }
 }
-/* line 36, sass/partials/_team.scss */
+/* line 45, sass/partials/_team.scss */
 article.individual-member h4 {
   color: #ffffff;
   font-size: 1.1em;
@@ -1516,7 +1525,7 @@ article.individual-member h4 {
   text-shadow: 1px 1px 5px #969696;
 }
 
-/* line 46, sass/partials/_team.scss */
+/* line 55, sass/partials/_team.scss */
 div.individual-information {
   text-align: center;
   display: block;
@@ -1527,7 +1536,7 @@ div.individual-information {
   bottom: 6%;
 }
 
-/* line 56, sass/partials/_team.scss */
+/* line 65, sass/partials/_team.scss */
 article.individual-member a > div.overlay {
   width: 100%;
   height: 100%;
@@ -1542,7 +1551,7 @@ article.individual-member a > div.overlay {
   padding: 0;
 }
 
-/* line 71, sass/partials/_team.scss */
+/* line 80, sass/partials/_team.scss */
 article.individual-member a:hover > .overlay {
   width: 100%;
   height: 100%;
@@ -1555,7 +1564,7 @@ article.individual-member a:hover > .overlay {
   transition: opacity 0.4s ease-in-out;
 }
 
-/* line 83, sass/partials/_team.scss */
+/* line 92, sass/partials/_team.scss */
 article.individual-team-container {
   max-width: 68em;
   margin-left: auto;
@@ -1574,12 +1583,12 @@ article.individual-team-container:after {
   clear: both;
 }
 @media screen and (max-width: 979px) {
-  /* line 83, sass/partials/_team.scss */
+  /* line 92, sass/partials/_team.scss */
   article.individual-team-container {
     padding: 1.0em;
   }
 }
-/* line 90, sass/partials/_team.scss */
+/* line 99, sass/partials/_team.scss */
 article.individual-team-container div.individual-team-image {
   float: left;
   display: block;
@@ -1590,17 +1599,21 @@ article.individual-team-container div.individual-team-image {
 article.individual-team-container div.individual-team-image:last-child {
   margin-right: 0;
 }
-/* line 92, sass/partials/_team.scss */
+/* line 101, sass/partials/_team.scss */
 article.individual-team-container div.individual-team-image img {
   display: block;
 }
 
 /* line 2, sass/partials/_bidproject.scss */
-body .page-template-archive-bidprojects {
-  background-color: #303030 !important;
+body.page-template-archive-bidprojects #primary {
+  background-color: #1c1c1c;
+}
+/* line 5, sass/partials/_bidproject.scss */
+body.page-template-archive-bidprojects h2 {
+  margin-bottom: 0.5em;
 }
 
-/* line 6, sass/partials/_bidproject.scss */
+/* line 9, sass/partials/_bidproject.scss */
 div.all_projects {
   position: relative;
   padding-bottom: 2.0em;
@@ -1615,7 +1628,7 @@ div.all_projects:after {
   clear: both;
 }
 
-/* line 11, sass/partials/_bidproject.scss */
+/* line 14, sass/partials/_bidproject.scss */
 article.project_container {
   max-width: 68em;
   margin-left: auto;
@@ -1629,7 +1642,7 @@ article.project_container:after {
   display: table;
   clear: both;
 }
-/* line 15, sass/partials/_bidproject.scss */
+/* line 18, sass/partials/_bidproject.scss */
 article.project_container .date-block {
   display: block;
   width: 6.0em;
@@ -1641,7 +1654,7 @@ article.project_container .date-block {
   text-align: center;
   z-index: 667;
 }
-/* line 26, sass/partials/_bidproject.scss */
+/* line 29, sass/partials/_bidproject.scss */
 article.project_container .project_information {
   display: block;
   width: 97%;
@@ -1654,12 +1667,12 @@ article.project_container .project_information {
   padding: 1.0em 1.0em 1.0em 6.5em;
 }
 @media screen and (max-width: 767px) {
-  /* line 26, sass/partials/_bidproject.scss */
+  /* line 29, sass/partials/_bidproject.scss */
   article.project_container .project_information {
     right: 1.0em;
   }
 }
-/* line 40, sass/partials/_bidproject.scss */
+/* line 43, sass/partials/_bidproject.scss */
 article.project_container h4 {
   color: #fff;
   font-weight: 400;

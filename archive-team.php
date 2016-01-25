@@ -4,6 +4,9 @@ Template Name: full-team
 */
   get_header('interior');
 ?>
+<section class="dark-stripe">
+    <h2>LMC Team</h2>
+
 <div id="primary" class="">
     <div id="content" class="individual-container " role="main">
     <?php
@@ -25,5 +28,6 @@ Template Name: full-team
     <?php endwhile; ?>
     </div>
 </div>
+</section>
 <?php wp_reset_query(); ?>
 <?php get_footer(); ?>

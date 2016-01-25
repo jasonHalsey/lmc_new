@@ -1,7 +1,10 @@
-body{
-	.page-template-archive-bidprojects{
-		background-color: $light-grey!important;
-	} 
+body.page-template-archive-bidprojects{
+	#primary{
+		background-color: $dk-grey; 
+	}
+	h2{
+		margin-bottom: 0.5em;
+	}
 }
 div.all_projects{
 	position: relative;
