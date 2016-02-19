@@ -27,9 +27,9 @@ Template Name: Bid Projects
                         ?></h3>
                     </div>
                     <div class="project_information">
-            	    	<h2><a href="<?php the_permalink() ?>" ><?php the_title(); ?> </a></h2>
+            	    	<h2><a href="<?php the_permalink() ?>" ><?php the_title(); ?> <span class="bid_arrow">&#10140;</span></a></h2>
                         <h4>
-                            <?php echo get_post_meta( $post->ID, '_cmb2_project_address', true ); ?><br />
+                            <?php echo get_post_meta( $post->ID, '_cmb2_project_address', true ); ?>
                             <?php echo get_post_meta( $post->ID, '_cmb2_project_city', true ); ?>, <?php echo get_post_meta( $post->ID, '_cmb2_project_state', true ); ?> <?php echo get_post_meta( $post->ID, '_cmb2_project_zip', true );
                             ?>
                         </h4>

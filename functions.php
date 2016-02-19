@@ -38,14 +38,22 @@ function my_jquery_enqueue() {
 }
 
 
-function wpb_adding_scripts() {
-  wp_register_script('scripts', get_template_directory_uri() . '/js/scripts.js');
-  wp_register_script('cycle', 'http://malsup.github.com/jquery.cycle2.js');
-  wp_enqueue_script('cycle');
-  wp_enqueue_script('scripts');
+function lmc_enqueue_stuff() {
+  if ( is_page( 'contact' ) ) {
+    wp_register_script('mapbox_lmc', get_template_directory_uri() . '/js/mapbox_lmc.js');
+		wp_enqueue_script('mapbox_lmc');
+		wp_register_script('scripts', get_template_directory_uri() . '/js/scripts.js');
+	  wp_register_script('cycle', 'http://malsup.github.com/jquery.cycle2.js');
+	  wp_enqueue_script('cycle');
+	  wp_enqueue_script('scripts');
+  } else {
+    wp_register_script('scripts', get_template_directory_uri() . '/js/scripts.js');
+	  wp_register_script('cycle', 'http://malsup.github.com/jquery.cycle2.js');
+	  wp_enqueue_script('cycle');
+	  wp_enqueue_script('scripts');
+  }
 }
-add_action( 'wp_footer', 'wpb_adding_scripts' );  
-
+add_action( 'wp_footer', 'lmc_enqueue_stuff' );
 
 
 /* ################# Custom Post Types #################  */
