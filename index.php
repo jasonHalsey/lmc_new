@@ -34,36 +34,34 @@
 
     <!--#########################################################################################################-->
 
-    <header class="navigation ">
-      <div class="navigation-wrapper ">
-        <a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
-        <div class="nav">
-          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu show' ) ); ?>
-        </div>
-      </div>
-    </header>
+    <header class="navigation" role="banner">
+		  <div class="navigation-wrapper">
+		    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu"><img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/menu-open-large.png" /></a>
+		    <nav role="navigation">
+		      <?php wp_nav_menu( array( 'menu_id' => 'js-navigation-menu', 'theme_location' => 'primary', 'menu_class' => 'navigation-menu show' ) ); ?>
+		    </nav>    
+		  </div>
+		</header>
 
     <!--#########################################################################################################-->
 
-    <div class="mission">
-      
+    <div class="mission">      
       <span>
         <p>At LMC Construction, we’re always building. We start well before we begin construction, front-loading each project with collaboration, clear communication and a can-do frame of mind. Some might say that’s a lot of “Cs.” Our clients find it’s a blueprint for success.</p>
 
         <p>Based in Tualatin, Oregon, we’ve been told we’re a little different than other general contractors and construction management companies in the area. We like that.</p>
       </span>
-
     </div>
 
     <div id="holder">
       <div id="main_slider" class="cycle-slideshow">
-     	<?php while ( have_posts() ) : the_post(); ?>
-			<?php 
-				foreach(get_images_src('large','false') as $k => $i){
-				echo '<img src="'.$i[0].'" width="'.$i[1].'"  />';
-				}
-			?> 
-		<?php endwhile; ?>
+	     	<?php while ( have_posts() ) : the_post(); ?>
+				<?php 
+					foreach(get_images_src('large','false') as $k => $i){
+					echo '<img src="'.$i[0].'" width="'.$i[1].'"  />';
+					}
+				?> 
+				<?php endwhile; ?>
       </div> 
     </div>
 

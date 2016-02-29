@@ -4,6 +4,9 @@ html{
 body {
 	font-family: $secondary-font;
 }
+body.home {
+	background-color:#303030;
+}
 #trans-bars{
 	width:100%;
 	// max-width: $max-width;
@@ -97,6 +100,9 @@ body {
 			line-height: 2.3em;
 		}	
 	}
+	@include media ($mobile) {
+		display: none;
+	}
 }
 .mission{
 	display: block;
@@ -112,6 +118,11 @@ body {
 		display:block;
 		width:100%;
 		max-width: 40em;
+	}
+	@include media ($mobile) {
+		background-color: transparent;
+		position: relative;
+		padding:1.0em;
 	}
 }
 
@@ -140,6 +151,17 @@ body {
 			color: #fff;
 		}
 	}
+	@include media ($mobile) {
+		background-color: transparent;
+		position: relative;
+		left:inherit;
+		top:inherit;
+		bottom: inherit;
+		margin: 0 auto;
+		span{
+			display:none;
+		}
+	}
 }
 
 .home_content{
@@ -155,12 +177,21 @@ body {
 			text-transform: uppercase;
 		}
 		line-height: 2.0em;
+		@include media ($mobile) {
+			@include span-columns(12);
+			text-align: center;
+			padding:0.5em;
+		}
 	}
 	.home_content-side{
 		@include span-columns(4);
 		text-align: right;
 		img{
 			margin: 1.5em 0;
+		}
+		@include media ($mobile) {
+			@include span-columns(12);
+			text-align: center;
 		}
 	}
 }

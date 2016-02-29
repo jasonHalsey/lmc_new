@@ -28,11 +28,7 @@
 	<?php wp_head(); ?>
 </head>
 
-
-
-
 <body <?php body_class('Site'); ?> >
- <!--  <div class="interior-background-bar"></div> -->
   <section id="interior-trans-bars">
 
     <!--#########################################################################################################-->

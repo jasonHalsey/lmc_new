@@ -23,6 +23,9 @@ header.navigation {
   width: 100%;
   z-index: 999;
 
+
+  
+
   .navigation-wrapper {
     @include clearfix;
     position: relative;
@@ -93,6 +96,7 @@ header.navigation {
     display: none;
     margin: 0 auto;
     overflow: visible;
+    background-color: #471d11;
     padding: 0;
     width: 100%;
     z-index: 9999;

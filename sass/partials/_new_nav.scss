@@ -22,6 +22,7 @@ header.navigation {
   @include media ($mobile) {
     line-height: 2.0em;
     min-height:3.0em;
+    background-color: #471d11;
   }
 
   .navigation-wrapper {
@@ -144,6 +145,7 @@ header.navigation {
     padding: 0;
     width: 100%;
     z-index: 9999;
+    background-color:#471d11;
 
     &.show {
       display: block;
