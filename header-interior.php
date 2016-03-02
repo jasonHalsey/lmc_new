@@ -28,7 +28,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class('Site'); ?> >
+<body <?php body_class('Site'); ?> "cd-container">
   <section id="interior-trans-bars">
 
     <!--#########################################################################################################-->

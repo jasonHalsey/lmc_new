@@ -25,8 +25,6 @@ get_header('interior'); ?>
 
 			<h3>Bid Due</h3>
 
-
-
 			<?php
 
 				// Get unix date
@@ -39,7 +37,9 @@ get_header('interior'); ?>
 				echo $some_date;
 
 			?>
-
+			<h3>Contac</h3>
+			<?php echo get_post_meta( $post->ID, '_cmb2_pproject_contact', true ); ?>
+			
 			<h3>Project Summary</h3>
 			<?php 
 				echo wpautop(get_post_meta( $post->ID, '_cmb2_project_work_summary', true )); 

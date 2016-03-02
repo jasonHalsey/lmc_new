@@ -408,15 +408,52 @@ header.navigation {
 }
 
 .interior-logo-cta {
-    width: 20%;
-    height: auto;
-    float: left;
-    margin-left: 12%;
-    @include media ($mobile) {
-      margin-left: auto;
-      margin: 0 auto;
-      float: none;
-      width: 40%;
+  width: 20%;
+  height: auto;
+  float: left;
+  margin-left: 12%;
+  @include media ($mobile) {
+    margin-left: auto;
+    margin: 0 auto;
+    float: none;
+    width: 40%;
+  }
+}
+
+section#service_nav{
+  @include media ($mobile){
+    display:none;
+  }
+  & ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    & li {
+      flex: 1 1 100%;
+    }
+    @include media(max-width 1200px) {
+      flex-direction: column;
     }
   }
+  ul#top_nav{
+    background-color: $dk-grey;
+    padding: 0.75em;
+    border-top: 1px solid #bababa;
+    li{
+      text-align: center;
+      padding: 0.5em;
+      a{
+        color:#fff;
+        text-align: center;
+        border-radius: 4px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        background: rgb(128,128,128);
+        padding: 0.5em;
+        &:hover{
+          background: rgba(128,128,128, 0.5);
+        }
+      }
+    }
+  }
+}
 

@@ -11,7 +11,7 @@
 
 
 <div class="wrapper-for-content-outside-of-footer">
-<body <?php body_class('Site'); ?>>
+<body <?php body_class('Site'); ?> "cd-container">
   <div class="background-bar"></div>
   <section id="trans-bars">
 

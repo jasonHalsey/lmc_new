@@ -1112,24 +1112,77 @@ header.navigation .search-bar form button[type=submit] img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  /* line 423, sass/partials/_new_nav.scss */
+  section#service_nav {
+    display: none;
+  }
+}
+/* line 427, sass/partials/_new_nav.scss */
+section#service_nav ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+/* line 431, sass/partials/_new_nav.scss */
+section#service_nav ul li {
+  flex: 1 1 100%;
+}
+@media screen and (max-width: 1200px) {
+  /* line 427, sass/partials/_new_nav.scss */
+  section#service_nav ul {
+    flex-direction: column;
+  }
+}
+/* line 438, sass/partials/_new_nav.scss */
+section#service_nav ul#top_nav {
+  background-color: #1c1c1c;
+  padding: 0.75em;
+  border-top: 1px solid #bababa;
+}
+/* line 442, sass/partials/_new_nav.scss */
+section#service_nav ul#top_nav li {
+  text-align: center;
+  padding: 0.5em;
+}
+/* line 445, sass/partials/_new_nav.scss */
+section#service_nav ul#top_nav li a {
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: gray;
+  padding: 0.5em;
+}
+/* line 452, sass/partials/_new_nav.scss */
+section#service_nav ul#top_nav li a:hover {
+  background: rgba(128, 128, 128, 0.5);
+}
+
 /* line 1, sass/partials/_structure.scss */
 body {
   margin: 0;
 }
 
 /* line 4, sass/partials/_structure.scss */
+img {
+  text-decoration: none;
+  border: 0px;
+}
+
+/* line 5, sass/partials/_structure.scss */
 div.portfolio-bg {
   width: 100%;
   height: auto;
   overflow: hidden;
 }
-/* line 8, sass/partials/_structure.scss */
+/* line 9, sass/partials/_structure.scss */
 div.portfolio-bg img {
   width: 100%;
   height: auto;
 }
 
-/* line 14, sass/partials/_structure.scss */
+/* line 15, sass/partials/_structure.scss */
 #main {
   max-width: 68em;
   margin-left: auto;
@@ -1142,18 +1195,18 @@ div.portfolio-bg img {
   clear: both;
 }
 
-/* line 19, sass/partials/_structure.scss */
+/* line 20, sass/partials/_structure.scss */
 .pgm img {
   width: 100% !important;
   height: auto;
 }
-/* line 23, sass/partials/_structure.scss */
+/* line 24, sass/partials/_structure.scss */
 .pgm .canvas {
   width: 100% !important;
   height: auto;
 }
 
-/* line 29, sass/partials/_structure.scss */
+/* line 30, sass/partials/_structure.scss */
 .single-contain {
   max-width: 68em;
   margin-left: auto;
@@ -1172,7 +1225,7 @@ div.portfolio-bg img {
   clear: both;
 }
 @media screen and (max-width: 767px) {
-  /* line 29, sass/partials/_structure.scss */
+  /* line 30, sass/partials/_structure.scss */
   .single-contain {
     padding: 1.5em;
   }
@@ -1963,7 +2016,7 @@ div.brand-content-wrapper:after {
 div.brand-content {
   display: table-cell;
   vertical-align: middle;
-  padding-bottom: 2.0em;
+  padding: 0 1.0em 2.0em;
 }
 /* line 147, sass/partials/_parallax.scss */
 div.brand-content p {
@@ -2163,4 +2216,118 @@ div.abbot_top p:last-child {
 #contact-container input[type="submit"] {
   background-color: #242424;
   margin: 0 auto;
+}
+
+/* -------------------------------- 
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+/* line 8, sass/partials/_back-to-top.scss */
+.cd-container {
+  width: 100%;
+}
+
+/* line 11, sass/partials/_back-to-top.scss */
+.cd-container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 17, sass/partials/_back-to-top.scss */
+.cd-top {
+  display: block;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+
+/* line 32, sass/partials/_back-to-top.scss */
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+
+/* line 37, sass/partials/_back-to-top.scss */
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 42, sass/partials/_back-to-top.scss */
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+
+/* line 46, sass/partials/_back-to-top.scss */
+.no-touch .cd-top:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 51, sass/partials/_back-to-top.scss */
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 57, sass/partials/_back-to-top.scss */
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?j18vpw");
+  src: url("fonts/icomoon.eot?#iefixj18vpw") format("embedded-opentype"), url("fonts/icomoon.ttf?j18vpw") format("truetype"), url("fonts/icomoon.woff?j18vpw") format("woff"), url("fonts/icomoon.svg?j18vpw#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 12, sass/partials/_fonts.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 1.75em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 28, sass/partials/_fonts.scss */
+.icon-menu:before {
+  content: "\e9bd";
+  color: rgba(51, 51, 51, 0.7);
+}
+
+/* line 33, sass/partials/_fonts.scss */
+.icon-circle-up:before {
+  content: "\ea41";
+  color: rgba(51, 51, 51, 0.7);
+  display: block;
+  position: absolute;
+  top: 25%;
+  right: 25%;
 }

@@ -42,13 +42,24 @@ function lmc_enqueue_stuff() {
   if ( is_page( 'contact' ) ) {
     wp_register_script('mapbox_lmc', get_template_directory_uri() . '/js/mapbox_lmc.js');
 		wp_enqueue_script('mapbox_lmc');
-		wp_register_script('scripts', get_template_directory_uri() . '/js/scripts.js');
+		wp_register_script('scripts', get_template_directory_uri() . '/js/cust_scripts.js');
 	  wp_register_script('cycle', 'http://malsup.github.com/jquery.cycle2.js');
 	  wp_enqueue_script('cycle');
 	  wp_enqueue_script('scripts');
+	} elseif ( is_page( 'services' ) ){
+		wp_register_script('modernizr', 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js');
+    wp_register_script('scripts', get_template_directory_uri() . '/js/cust_scripts.js');
+    wp_register_script('singlePageNav', get_template_directory_uri() . '/js/jquery.singlePageNav.js');
+    wp_register_script('spn', get_template_directory_uri() . '/js/spn.js');
+	  wp_register_script('cycle', 'http://malsup.github.com/jquery.cycle2.js');
+	  wp_enqueue_script('modernizr');
+	  wp_enqueue_script('cycle');
+	  wp_enqueue_script('singlePageNav');
+	  wp_enqueue_script('spn');
+	  wp_enqueue_script('scripts');
   } else {
     wp_register_script('modernizr', 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js');
-    wp_register_script('scripts', get_template_directory_uri() . '/js/scripts.js');
+    wp_register_script('scripts', get_template_directory_uri() . '/js/cust_scripts.js');
 	  wp_register_script('cycle', 'http://malsup.github.com/jquery.cycle2.js');
 	  wp_enqueue_script('modernizr');
 	  wp_enqueue_script('cycle');
@@ -244,6 +255,13 @@ function cmb2_lmc_metaboxes( array $meta_boxes ) {
 				'options' => array( 'textarea_rows' => 5, ),
 			),
 			array(
+				'name' => __( 'Team Member Hobbies', 'cmb2' ),
+				'desc' => __( ' ', 'cmb2' ),
+				'id'   => $prefix . 'team_hobbies',
+				'type' => 'text_medium',
+				// 'repeatable' => true,
+			),
+			array(
 				'name' => __( 'Profile Image', 'cmb2' ),
 				'desc' => __( 'Upload an image or enter a URL.', 'cmb2' ),
 				'id'   => $prefix . 'team_image',
@@ -384,6 +402,12 @@ function cmb2_lmc_metaboxes( array $meta_boxes ) {
 				'id'   => $prefix . 'service_description',
 				'type' => 'wysiwyg',
 				// 'repeatable' => true,
+			),
+			array(
+				'name' => __( 'Service Slug - (Single Word)', 'cmb2' ),
+				'desc' => __( ' ', 'cmb2' ),
+				'id'   => $prefix . 'service_slug',
+				'type' => 'text_medium',
 			),
 			
 		),

@@ -19,6 +19,7 @@
 			 		 <?php wp_nav_menu( array( 'theme_location' => 'secondary-menu', 'menu_class' => 'nav-menu' ) ); ?>
 		   
 			</div>
+			<a href="#0" class="cd-top icon-circle-up"></a>
 		</footer><!-- #colophon -->
 	  <?php
 		  if ( is_page( 'contact' )) { ?>
@@ -28,6 +29,7 @@
 		  }
 		?>
 	<?php wp_footer(); ?>
+
 </body>
 
 </html>
