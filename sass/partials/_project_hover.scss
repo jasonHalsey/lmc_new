@@ -11,6 +11,28 @@ $medium-screen: em(640);
     @include span-columns(12);
   }
 }
+
+#filter_block{
+  @include clearfix;
+  h3{
+    font-size: 1.0em;
+    font-weight: normal;
+    display: block;
+    padding: 1.0em 1.0em 1.0em 0;
+    float:left;
+  }
+  ul{
+    float:left;
+    @include clearfix;
+    li{
+      display:block;
+      padding: 1.0em;
+      float:left;
+    }
+  }
+}
+
+// Tile Hover Styles
 .hover-tile-outer {
 
   $hover-tile-height: 10em;
