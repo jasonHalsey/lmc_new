@@ -27,12 +27,12 @@
 
 .icon-menu:before {
 	content: "\e9bd";
-	color:rgba( $base-font-color, .7 )
+	color:rgba( $base-font-color, .7 );
 }
 
 .icon-circle-up:before {
-    content: "\ea41";
-    color:rgba( $base-font-color, .7 );
+    content: "\ea41";    
+    color:rgba( 255, 255, 255, .7 );
     display:block;
     position:absolute;
     top:25%;

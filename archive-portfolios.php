@@ -5,8 +5,8 @@ Template Name: Portfolio Archive
 
  get_header('interior'); ?>
 <section class="dark-stripe">
-    <h2>
-      Recent Projects 2
+    <h2 class="port_header">
+      Recent Projects
     </h2>
 
     <div id="project-container">
@@ -19,9 +19,8 @@ Template Name: Portfolio Archive
                 'posts_per_page' => 10,
             );
         ?>
-  <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Top Sidebar')) : ?>
- 
-      <?php endif; ?> 
+
+        <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Top Sidebar')) : ?><?php endif; ?> 
 
   
         <?php $the_query = new WP_Query( $args ); ?>
@@ -54,10 +53,12 @@ Template Name: Portfolio Archive
 
 <?php wp_reset_query(); ?>
 
-<section class="light-stripe">
+<section class="dark-stripe">
   <h2>Project Collection</h2>
-  <?php while ( have_posts() ) : the_post(); ?>
-    <?php echo the_content(); ?>
-  <?php endwhile; ?>
+  <article class="col_list">
+    <?php while ( have_posts() ) : the_post(); ?>
+      <?php echo the_content(); ?>
+    <?php endwhile; ?>
+  </article>
 </section>
 <?php get_footer(); ?>

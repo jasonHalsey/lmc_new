@@ -17,9 +17,11 @@ Modules - reusable parts of our design
 .cd-top {
   display: block;
   position: fixed;
+  color:#fff;
   bottom: 40px;
   right: 10px;
   text-align: center;
+  z-index:9999;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   /* image replacement properties */
   visibility: hidden;
@@ -44,7 +46,7 @@ Modules - reusable parts of our design
   opacity: .5;
 }
 .no-touch .cd-top:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   opacity: 1;
 }
 @media only screen and (min-width: 768px) {

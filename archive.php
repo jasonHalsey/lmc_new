@@ -13,8 +13,14 @@
 
  get_header('interior'); ?>
 <section class="dark-stripe">
-    <h2>
-      Archive Template
+    <h2 class="port_header">
+      <?php
+        if (is_category( )) {
+          $cat = get_query_var('cat');
+          $yourcat = get_category ($cat);
+          echo $yourcat->slug . ' Projects';
+         }
+      ?>
     </h2>
 
     <div id="project-container">
@@ -59,10 +65,4 @@
 
 <?php wp_reset_query(); ?>
 
-<section class="light-stripe">
-  <h2>Project Collection</h2>
-  <?php while ( have_posts() ) : the_post(); ?>
-    <?php echo the_content(); ?>
-  <?php endwhile; ?>
-</section>
 <?php get_footer(); ?>

@@ -26,9 +26,8 @@ add_action( 'init', 'my_custom_menus' );
 }
 
 
-
 /*  Breadcrumbs
-  /* ------------------------------------ */
+/* ------------------------------------ */
 
 function custom_breadcrumbs() {
        
@@ -124,6 +123,7 @@ function custom_breadcrumbs() {
                 $cat_link       = get_term_link($taxonomy_terms[0]->term_id, $custom_taxonomy);
                 $cat_name       = $taxonomy_terms[0]->name;
                
+
             }
               
             // Check if the post is in a category
@@ -259,6 +259,8 @@ function custom_breadcrumbs() {
        
 }
 
+/*  Add Portfolio to Categories filter results
+/* ------------------------------------ */
 function namespace_add_custom_types( $query ) {
   if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
     $query->set( 'post_type', array(
@@ -268,6 +270,7 @@ function namespace_add_custom_types( $query ) {
 	}
 }
 add_filter( 'pre_get_posts', 'namespace_add_custom_types' );
+
 
 /*  Remove Admin Bar
 /* ------------------------------------ */ 

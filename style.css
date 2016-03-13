@@ -445,8 +445,16 @@ div.mc-image {
   padding: 1.0em;
   float: left;
 }
+/* line 31, sass/partials/_project_hover.scss */
+#filter_block ul li a {
+  color: #bababa;
+}
+/* line 33, sass/partials/_project_hover.scss */
+#filter_block ul li a:hover {
+  color: #477DCA;
+}
 
-/* line 36, sass/partials/_project_hover.scss */
+/* line 42, sass/partials/_project_hover.scss */
 .hover-tile-outer {
   background-color: #BEB56E;
   border: 1px solid #DDD;
@@ -455,17 +463,17 @@ div.mc-image {
   cursor: pointer;
 }
 @media screen and (min-width: 40em) {
-  /* line 36, sass/partials/_project_hover.scss */
+  /* line 42, sass/partials/_project_hover.scss */
   .hover-tile-outer {
     width: 100%;
   }
 }
-/* line 50, sass/partials/_project_hover.scss */
+/* line 56, sass/partials/_project_hover.scss */
 .hover-tile-outer .hover-tile-container {
   height: 10em;
   overflow: hidden;
 }
-/* line 55, sass/partials/_project_hover.scss */
+/* line 61, sass/partials/_project_hover.scss */
 .hover-tile-outer .hover-tile-container:hover > .hover-tile {
   -webkit-transform: translate(0, -100%);
   -moz-transform: translate(0, -100%);
@@ -473,7 +481,7 @@ div.mc-image {
   -o-transform: translate(0, -100%);
   transform: translate(0, -100%);
 }
-/* line 59, sass/partials/_project_hover.scss */
+/* line 65, sass/partials/_project_hover.scss */
 .hover-tile-outer .hover-tile {
   -webkit-transition: all, 0.2s ease-in-out;
   -moz-transition: all, 0.2s ease-in-out;
@@ -483,7 +491,7 @@ div.mc-image {
   height: inherit;
   padding: 1em 1.5em;
 }
-/* line 67, sass/partials/_project_hover.scss */
+/* line 73, sass/partials/_project_hover.scss */
 .hover-tile-outer .hover-tile-visible {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.35em;
@@ -491,7 +499,7 @@ div.mc-image {
   text-align: center;
   padding: 5.9em 0 0;
 }
-/* line 73, sass/partials/_project_hover.scss */
+/* line 79, sass/partials/_project_hover.scss */
 .hover-tile-outer .hover-tile-visible span {
   display: block;
   width: 100%;
@@ -500,20 +508,20 @@ div.mc-image {
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
 }
-/* line 83, sass/partials/_project_hover.scss */
+/* line 89, sass/partials/_project_hover.scss */
 .hover-tile-outer .hover-tile-hidden {
   background: rgba(11, 83, 89, 0.7);
 }
-/* line 85, sass/partials/_project_hover.scss */
+/* line 91, sass/partials/_project_hover.scss */
 .hover-tile-outer .hover-tile-hidden h4 {
   margin-bottom: .2em;
   font-family: "Oswald", sans-serif;
 }
-/* line 89, sass/partials/_project_hover.scss */
+/* line 95, sass/partials/_project_hover.scss */
 .hover-tile-outer .hover-tile-hidden p {
   color: rgba(255, 255, 255, 0.7);
 }
-/* line 91, sass/partials/_project_hover.scss */
+/* line 97, sass/partials/_project_hover.scss */
 .hover-tile-outer .hover-tile-hidden p span {
   font-family: "Oswald", sans-serif;
   color: #fff;
@@ -1262,6 +1270,58 @@ div.portfolio-bg img {
   }
 }
 
+/* line 40, sass/partials/_structure.scss */
+#filter_block {
+  display: none;
+}
+
+/* line 44, sass/partials/_structure.scss */
+.col_list {
+  -webkit-columns: 3 200px;
+  -moz-columns: 3 200px;
+  columns: 3 200px;
+  color: #bababa;
+  text-align: center;
+  padding: 2.0em 0;
+}
+
+/* line 54, sass/partials/_structure.scss */
+body.single-portfolio h2 {
+  display: block;
+  background-color: #242424;
+  padding: 0.5em 0;
+  text-align: center;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.0em;
+  font-weight: 300;
+}
+/* line 65, sass/partials/_structure.scss */
+body.single-portfolio .single-contain {
+  color: #bababa;
+}
+
+/* line 70, sass/partials/_structure.scss */
+.cycle-pager {
+  position: absolute;
+  bottom: 0;
+  z-index: 9999;
+  color: #fff;
+  right: 90%;
+  font-size: 2.5em;
+}
+
+/* line 78, sass/partials/_structure.scss */
+.cycle-pager span.cycle-pager-active {
+  color: #D69746;
+}
+
+/* line 79, sass/partials/_structure.scss */
+.cycle-pager > * {
+  cursor: pointer;
+}
+
 /* line 1, sass/partials/_home.scss */
 html {
   background-color: #141414;
@@ -1578,8 +1638,12 @@ body.home {
   font-size: 2.0em;
   font-weight: 300;
 }
-
 /* line 216, sass/partials/_home.scss */
+.dark-stripe h2.port-header {
+  display: none;
+}
+
+/* line 220, sass/partials/_home.scss */
 .light-stripe {
   background-color: #303030;
   padding: 1.0em 0;
@@ -1592,7 +1656,7 @@ body.home {
   clear: both;
 }
 
-/* line 222, sass/partials/_home.scss */
+/* line 226, sass/partials/_home.scss */
 .nopad {
   padding-top: 1px !important;
 }
@@ -2271,9 +2335,11 @@ Modules - reusable parts of our design
 .cd-top {
   display: block;
   position: fixed;
+  color: #fff;
   bottom: 40px;
   right: 10px;
   text-align: center;
+  z-index: 9999;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   /* image replacement properties */
   visibility: hidden;
@@ -2283,41 +2349,41 @@ Modules - reusable parts of our design
   transition: opacity .3s 0s, visibility 0s .3s;
 }
 
-/* line 32, sass/partials/_back-to-top.scss */
+/* line 34, sass/partials/_back-to-top.scss */
 .cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
   -webkit-transition: opacity .3s 0s, visibility 0s 0s;
   -moz-transition: opacity .3s 0s, visibility 0s 0s;
   transition: opacity .3s 0s, visibility 0s 0s;
 }
 
-/* line 37, sass/partials/_back-to-top.scss */
+/* line 39, sass/partials/_back-to-top.scss */
 .cd-top.cd-is-visible {
   /* the button becomes visible */
   visibility: visible;
   opacity: 1;
 }
 
-/* line 42, sass/partials/_back-to-top.scss */
+/* line 44, sass/partials/_back-to-top.scss */
 .cd-top.cd-fade-out {
   /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
   opacity: .5;
 }
 
-/* line 46, sass/partials/_back-to-top.scss */
+/* line 48, sass/partials/_back-to-top.scss */
 .no-touch .cd-top:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   opacity: 1;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 51, sass/partials/_back-to-top.scss */
+  /* line 53, sass/partials/_back-to-top.scss */
   .cd-top {
     right: 20px;
     bottom: 20px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 57, sass/partials/_back-to-top.scss */
+  /* line 59, sass/partials/_back-to-top.scss */
   .cd-top {
     height: 60px;
     width: 60px;
@@ -2356,7 +2422,7 @@ Modules - reusable parts of our design
 /* line 33, sass/partials/_fonts.scss */
 .icon-circle-up:before {
   content: "\ea41";
-  color: rgba(51, 51, 51, 0.7);
+  color: rgba(255, 255, 255, 0.7);
   display: block;
   position: absolute;
   top: 25%;

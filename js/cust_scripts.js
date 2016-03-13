@@ -9,8 +9,19 @@ jQuery(document).ready(function() {
 		window.location.href = url;
 	});
 
+	
+adjustSlider();
+	
+// Adds "All" to category filetering in portfolio
 
-	adjustSlider();
+	jQuery( "#filter_block > ul" ).prepend( "<li><a href='" + site_url + "/projects'>All</a></li>" );
+
+	jQuery( "#filter_block").css('display','inline');
+
+	jQuery( ".dark-stripe > h2.portheader").css('display','block');
+
+
+	
 	// moveSlider();
 }); //End document.ready();
 
@@ -72,9 +83,6 @@ function adjustSlider() {
 	}else {
 		var sliderheight = jQuery('#main_slider img').height();
 		jQuery('#trans-bars').css( 'height', sliderheight + 110 );
-		console.log('smalls');
-		console.log(sliderheight + 110);
-
 	}
 }
 
