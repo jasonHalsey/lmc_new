@@ -1849,7 +1849,12 @@ body.page-template-archive-bidprojects h2 {
   margin-bottom: 0.5em;
 }
 
-/* line 9, sass/partials/_bidproject.scss */
+/* line 10, sass/partials/_bidproject.scss */
+body.single-bidproject section.dark-stripe {
+  color: #F5F5F5;
+}
+
+/* line 15, sass/partials/_bidproject.scss */
 div.all_projects {
   position: relative;
   padding-bottom: 2.0em;
@@ -1864,7 +1869,15 @@ div.all_projects:after {
   clear: both;
 }
 
-/* line 14, sass/partials/_bidproject.scss */
+/* line 22, sass/partials/_bidproject.scss */
+.single-bid h3 {
+  width: 100%;
+  border-bottom: 1px solid #333;
+  margin: 1.25em 0 0.50em;
+  padding-bottom: 0.25em;
+}
+
+/* line 29, sass/partials/_bidproject.scss */
 article.project_container {
   max-width: 68em;
   margin-left: auto;
@@ -1878,7 +1891,7 @@ article.project_container:after {
   display: table;
   clear: both;
 }
-/* line 18, sass/partials/_bidproject.scss */
+/* line 33, sass/partials/_bidproject.scss */
 article.project_container .date-block {
   display: block;
   width: 6.0em;
@@ -1890,7 +1903,7 @@ article.project_container .date-block {
   text-align: center;
   z-index: 667;
 }
-/* line 29, sass/partials/_bidproject.scss */
+/* line 44, sass/partials/_bidproject.scss */
 article.project_container .project_information {
   display: block;
   width: 97%;
@@ -1903,25 +1916,25 @@ article.project_container .project_information {
   padding: 1.0em 1.0em 1.0em 6.5em;
 }
 @media screen and (max-width: 767px) {
-  /* line 29, sass/partials/_bidproject.scss */
+  /* line 44, sass/partials/_bidproject.scss */
   article.project_container .project_information {
     right: 1.0em;
   }
 }
-/* line 42, sass/partials/_bidproject.scss */
+/* line 57, sass/partials/_bidproject.scss */
 article.project_container .project_information h2 {
   text-align: left;
   padding-left: 1.0em;
 }
-/* line 45, sass/partials/_bidproject.scss */
+/* line 60, sass/partials/_bidproject.scss */
 article.project_container .project_information h2 a {
   color: #9C9C9C;
 }
-/* line 47, sass/partials/_bidproject.scss */
+/* line 62, sass/partials/_bidproject.scss */
 article.project_container .project_information h2 a:hover {
   color: #fff;
 }
-/* line 53, sass/partials/_bidproject.scss */
+/* line 69, sass/partials/_bidproject.scss */
 article.project_container h4 {
   color: #9C9C9C;
   font-weight: 400;
@@ -1930,20 +1943,20 @@ article.project_container h4 {
   font-size: 1.0em;
 }
 @media screen and (max-width: 767px) {
-  /* line 53, sass/partials/_bidproject.scss */
+  /* line 69, sass/partials/_bidproject.scss */
   article.project_container h4 {
     padding-left: 0;
     text-align: center;
   }
 }
-/* line 64, sass/partials/_bidproject.scss */
+/* line 80, sass/partials/_bidproject.scss */
 article.project_container .bid_arrow {
   color: #9C9C9C;
   padding: 0 0.5em;
   font-size: 1.5em;
   float: right;
 }
-/* line 69, sass/partials/_bidproject.scss */
+/* line 85, sass/partials/_bidproject.scss */
 article.project_container .bid_arrow:hover {
   color: #fff;
 }
