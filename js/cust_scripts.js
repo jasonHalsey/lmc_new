@@ -1,5 +1,5 @@
 jQuery(document).ready(function() {
-	adjustSlider();
+	// adjustSlider();
 
 
 	jQuery('#main_slider').show();
@@ -29,7 +29,7 @@ jQuery(document).ready(function() {
 
 jQuery(window).resize(function() {
 	
-	adjustSlider();
+	// adjustSlider();
 	// moveSlider();
 });
 
@@ -74,18 +74,19 @@ jQuery(document).ready(function() {
 		);
 	});
 
-function adjustSlider() {
-	if ((jQuery("body").hasClass("home")) && (Modernizr.mq('only all and (min-width: 768px)'))) {
-	// if (jQuery("body").hasClass("home")) {
-		console.log('ad slider fired 2');
-	  var sliderheight = jQuery('#main_slider img').height();
-		jQuery('#trans-bars').css( 'height', sliderheight + 110 );
-		jQuery('.tag').css( 'height', sliderheight + 110 );
+// function adjustSlider() {
+// 	if ((jQuery("body").hasClass("home")) && (Modernizr.mq('only all and (min-width: 768px)'))) {
+// 	// if (jQuery("body").hasClass("home")) {
 		
-	}else {
-		var sliderheight = jQuery('#main_slider img').height();
-		jQuery('#trans-bars').css( 'height', sliderheight + 110 );
-	}
-}
+// 	  var sliderheight = jQuery('#main_slider img').height();
+// 		jQuery('#trans-bars').css( 'height', sliderheight + 110 );
+// 		jQuery('.tag').css( 'height', sliderheight + 110 );
+// 		console.log('adjustSlider fired ');
+// 	}else {
+// 		var sliderheight = jQuery('#main_slider img').height();
+// 		jQuery('#trans-bars').css( 'height', sliderheight + 110 );
+// 		onsole.log('adjustSlider kind of fired ');
+// 	}
+// }
 
 

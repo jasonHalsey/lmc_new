@@ -45,7 +45,7 @@
     </div>
 
     <div id="holder">
-      <div id="main_slider" class="cycle-slideshow">
+      <div id="main_slider" class="cycle-slideshow" >
 	     	<?php while ( have_posts() ) : the_post(); ?>
 				<?php 
 					foreach(get_images_src('large','false') as $k => $i){

@@ -39,7 +39,7 @@ get_header('interior'); ?>
 
 				?>
 				<h3>Contact</h3>
-				<?php echo get_post_meta( $post->ID, '_cmb2_pproject_contact', true ); ?>
+				<?php echo get_post_meta( $post->ID, '_cmb2_project_contact', true ); ?>
 				
 				<h3>Project Summary</h3>
 				<?php 

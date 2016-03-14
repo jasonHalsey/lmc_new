@@ -22,11 +22,9 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-
-
-<script type="text/javascript">
-   var site_url = '<?php bloginfo('url'); ?>';
-</script>
+  <script type="text/javascript">
+     var site_url = '<?php bloginfo('url'); ?>';
+  </script>
 
   
 	<!--[if lt IE 9]>
