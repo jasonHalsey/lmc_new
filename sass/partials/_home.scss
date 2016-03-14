@@ -178,6 +178,9 @@ body.home {
 	@include outer-container();
 	@include clearfix;
 	margin-bottom: 4.0em;
+	@include media ($dropscreen) {
+		padding-left:2.0em;
+	}
 	.home_content-text{
 		@include span-columns(8);
 		h2{
@@ -187,11 +190,13 @@ body.home {
 			text-transform: uppercase;
 		}
 		line-height: 2.0em;
+
 		@include media ($mobile) {
 			@include span-columns(12);
 			text-align: center;
 			padding:0.5em;
 		}
+
 	}
 	.home_content-side{
 		@include span-columns(4);

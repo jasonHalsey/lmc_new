@@ -1,5 +1,7 @@
 jQuery(document).ready(function() {
-	
+	adjustSlider();
+
+
 	jQuery('#main_slider').show();
 
 	jQuery('.portfolio-bg').cycle();
@@ -10,7 +12,7 @@ jQuery(document).ready(function() {
 	});
 
 	
-adjustSlider();
+
 	
 // Adds "All" to category filetering in portfolio
 
@@ -75,7 +77,7 @@ jQuery(document).ready(function() {
 function adjustSlider() {
 	if ((jQuery("body").hasClass("home")) && (Modernizr.mq('only all and (min-width: 768px)'))) {
 	// if (jQuery("body").hasClass("home")) {
-		console.log('ad slider fired');
+		console.log('ad slider fired 2');
 	  var sliderheight = jQuery('#main_slider img').height();
 		jQuery('#trans-bars').css( 'height', sliderheight + 110 );
 		jQuery('.tag').css( 'height', sliderheight + 110 );

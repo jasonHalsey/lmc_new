@@ -1573,7 +1573,13 @@ body.home {
   display: table;
   clear: both;
 }
-/* line 181, sass/partials/_home.scss */
+@media screen and (max-width: 989px) {
+  /* line 177, sass/partials/_home.scss */
+  .home_content {
+    padding-left: 2.0em;
+  }
+}
+/* line 184, sass/partials/_home.scss */
 .home_content .home_content-text {
   float: left;
   display: block;
@@ -1585,7 +1591,7 @@ body.home {
 .home_content .home_content-text:last-child {
   margin-right: 0;
 }
-/* line 183, sass/partials/_home.scss */
+/* line 186, sass/partials/_home.scss */
 .home_content .home_content-text h2 {
   font-family: "Oswald", sans-serif;
   padding: 0.5em 0;
@@ -1593,7 +1599,7 @@ body.home {
   text-transform: uppercase;
 }
 @media screen and (max-width: 767px) {
-  /* line 181, sass/partials/_home.scss */
+  /* line 184, sass/partials/_home.scss */
   .home_content .home_content-text {
     float: left;
     display: block;
@@ -1607,7 +1613,7 @@ body.home {
     margin-right: 0;
   }
 }
-/* line 196, sass/partials/_home.scss */
+/* line 201, sass/partials/_home.scss */
 .home_content .home_content-side {
   float: left;
   display: block;
@@ -1619,12 +1625,12 @@ body.home {
 .home_content .home_content-side:last-child {
   margin-right: 0;
 }
-/* line 199, sass/partials/_home.scss */
+/* line 204, sass/partials/_home.scss */
 .home_content .home_content-side img {
   margin: 1.5em 0;
 }
 @media screen and (max-width: 767px) {
-  /* line 196, sass/partials/_home.scss */
+  /* line 201, sass/partials/_home.scss */
   .home_content .home_content-side {
     float: left;
     display: block;
@@ -1638,7 +1644,7 @@ body.home {
   }
 }
 
-/* line 210, sass/partials/_home.scss */
+/* line 215, sass/partials/_home.scss */
 .dark-stripe {
   background-color: #1c1c1c;
   padding: 1.0em 0;
@@ -1649,7 +1655,7 @@ body.home {
   display: table;
   clear: both;
 }
-/* line 214, sass/partials/_home.scss */
+/* line 219, sass/partials/_home.scss */
 .dark-stripe h2 {
   display: block;
   background-color: #242424;
@@ -1661,12 +1667,12 @@ body.home {
   font-size: 2.0em;
   font-weight: 300;
 }
-/* line 226, sass/partials/_home.scss */
+/* line 231, sass/partials/_home.scss */
 .dark-stripe h2.port-header {
   display: none;
 }
 
-/* line 230, sass/partials/_home.scss */
+/* line 235, sass/partials/_home.scss */
 .light-stripe {
   background-color: #303030;
   padding: 1.0em 0;
@@ -1679,7 +1685,7 @@ body.home {
   clear: both;
 }
 
-/* line 236, sass/partials/_home.scss */
+/* line 241, sass/partials/_home.scss */
 .nopad {
   padding-top: 1px !important;
 }
