@@ -12,14 +12,15 @@ header.navigation {
   $navigation-active-link-color: transparentize(white, 0.5);
   $navigation-submenu-padding: 1em;
   $navigation-submenu-width: 12em;
-  $horizontal-bar-mode: $large-screen;
+  // $horizontal-bar-mode: $large-screen;
+    $horizontal-bar-mode: $desktop;
 
   background-color: $navigation-background;
   border-bottom: 1px solid darken($navigation-background, 10);
   min-height: $navigation-height;
   width: 100%;
   z-index: 999;
-  @include media ($mobile) {
+  @include media ($tablet) {
     line-height: 2.0em;
     min-height:3.0em;
     background-color: #471d11;
@@ -31,7 +32,7 @@ header.navigation {
     z-index: 9999;
     width: 60%;
     float: right;
-    @include media ($mobile) {
+    @include media ($tablet) {
       width:100%;
       float: none;
     }
@@ -109,7 +110,7 @@ header.navigation {
       color: $navigation-color-hover;
     }
 
-    @include media ($mobile) {
+    @include media ($tablet) {
       line-height: 2.0em;
       float:none;
       padding-right: 0;
@@ -132,7 +133,7 @@ header.navigation {
       float: left;
     }
 
-    @include media ($mobile) {
+    @include media ($tablet) {
       min-height: 0;
     }
   }
@@ -182,7 +183,7 @@ header.navigation {
       line-height: 3.0em;
     }
 
-    @include media ($mobile) {
+    @include media ($tablet) {
       line-height: 3.0em;
       padding-right:0;
       text-align: center;
@@ -411,7 +412,7 @@ header.navigation {
   height: auto;
   float: left;
   margin-left: 12%;
-  @include media ($mobile) {
+  @include media ($tablet) {
     margin-left: auto;
     margin: 0 auto;
     float: none;
@@ -420,7 +421,7 @@ header.navigation {
 }
 
 section#service_nav{
-  @include media ($mobile){
+  @include media ($tablet){
     display:none;
   }
   & ul {

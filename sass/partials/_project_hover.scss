@@ -36,6 +36,9 @@ $medium-screen: em(640);
       }
     }
   }
+  @include media ($phone) {
+    display:none!important;
+  }
 }
 
 // Tile Hover Styles

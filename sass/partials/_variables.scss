@@ -1,6 +1,6 @@
 //Media Breakpoints
-$desktop: new-breakpoint(min-width 980px);
-$tablet: new-breakpoint(max-width 979px);
+$desktop: new-breakpoint(min-width 990px);
+$tablet: new-breakpoint(max-width 860px);
 $mobile: new-breakpoint(max-width 767px);
 $phone: new-breakpoint(max-width 468px);
 

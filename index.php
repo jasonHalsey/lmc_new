@@ -10,8 +10,7 @@
 
 
 
-<div class="wrapper-for-content-outside-of-footer">
-<body <?php body_class('Site'); ?> "cd-container">
+
   <div class="background-bar"></div>
   <section id="trans-bars">
 
@@ -23,8 +22,8 @@
           <img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/LMC_logo.svg" />
         </a>
         <div class="ctas">
-          <a href="#">Bid Room</a>
-          <a href="#">Contact Us</a>
+          <a href="<?php echo bloginfo('url'); ?>/bid-room/">Bid Room</a>
+          <a href="<?php echo bloginfo('url'); ?>/contact/">Contact Us</a>
         </div>
         <span>
           We’re<br />Involved<br /> at <span>LMC Construction.</span>
@@ -34,15 +33,7 @@
 
     <!--#########################################################################################################-->
 
-    <header class="navigation" role="banner">
-		  <div class="navigation-wrapper">
-		    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu"><img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/menu-open-large.png" /></a>
-		    <nav role="navigation">
-		      <?php wp_nav_menu( array( 'menu_id' => 'js-navigation-menu', 'theme_location' => 'primary', 'menu_class' => 'navigation-menu show' ) ); ?>
-		    </nav>    
-		  </div>
-		</header>
-
+ 
     <!--#########################################################################################################-->
 
     <div class="mission">      
