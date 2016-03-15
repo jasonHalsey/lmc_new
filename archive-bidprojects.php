@@ -10,7 +10,7 @@ Template Name: Bid Projects
     <div id="primary">
         <div id="content" role="main" class="all_projects">
             <?php
-                $bidgroup = array( 'post_type' => 'bidproject', );
+                $bidgroup = array( 'post_type' => 'bidproject', 'order' => 'Name');
                 $bidgrouploop = new WP_Query( $bidgroup );
             ?>
             <?php while ( $bidgrouploop->have_posts() ) : $bidgrouploop->the_post();?>
