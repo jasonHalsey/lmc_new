@@ -402,7 +402,7 @@ div.mc-image {
   margin-right: 0;
 }
 /* line 10, sass/partials/_project_hover.scss */
-.single-project:nth-child(4n+4) {
+.single-project:nth-child(3n+3) {
   margin-right: 0;
 }
 @media screen and (max-width: 767px) {
