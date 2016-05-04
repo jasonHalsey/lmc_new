@@ -13,10 +13,7 @@ Template Name: Portfolio Archive
         <?php  
             $args = array(
                 'post_type'      => 'portfolio',
-                'meta_key'       => '_cmb2_portfolio_checkbox',
-                'meta_value'     => 'on',
                 'order'          => 'ASC',
-                'posts_per_page' => 10,
             );
         ?>
 

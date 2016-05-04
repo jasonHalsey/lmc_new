@@ -10,7 +10,7 @@ Template Name: full-team
 <div id="primary" class="">
     <div id="content" class="individual-container " role="main">
     <?php
-    $mypost = array( 'post_type' => 'team','orderby' => 'menu_order');
+    $mypost = array( 'post_type' => 'team', 'orderby'=> 'title', 'order' => 'ASC'); 
     $loop = new WP_Query( $mypost );
     ?>
     <?php while ( $loop->have_posts() ) : $loop->the_post();?>

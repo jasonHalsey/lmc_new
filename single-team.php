@@ -20,8 +20,8 @@ get_header('interior'); ?>
 	 		</div>
 		    <h2><?php echo the_title(); ?></h2>
 		    <h4><?php echo get_post_meta( $post->ID, '_cmb2_team_title', true ); ?></h4>
-
-			<p><?php echo get_post_meta( $post->ID, '_cmb2_team_wysiwyg', true ); ?></p>
+		    <p><?php echo get_post_meta( $post->ID, '_cmb2_team_wysiwyg', true ); ?></p>
+				<h4>Hobbies: </h4><p><?php echo get_post_meta( $post->ID, '_cmb2_team_hobbies', true ); ?></p>
 		</article>
 
 	<?php endif; // is_single() ?>
