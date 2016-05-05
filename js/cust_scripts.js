@@ -22,6 +22,8 @@ jQuery(document).ready(function() {
 
 	jQuery( ".dark-stripe > h2.portheader").css('display','block');
 
+	jQuery( ".individual-container").css('display','block');
+
 
 	
 	// moveSlider();

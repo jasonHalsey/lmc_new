@@ -11,6 +11,7 @@ div.individual-container{
 	width:100%;
 	@include outer-container;
 	@include clearfix;
+  display: none;
 	// margin-top: 0.25em;
 }
 

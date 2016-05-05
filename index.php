@@ -64,7 +64,7 @@
 
 
 	<h2>
-	  Recent Projects
+	  Featured Projects
 	</h2>
 
 	<div id="project-container">

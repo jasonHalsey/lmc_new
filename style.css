@@ -1729,6 +1729,7 @@ div.individual-container {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
+  display: none;
 }
 /* line 15, sass/bourbon/addons/_clearfix.scss */
 div.individual-container:after {
@@ -1743,7 +1744,7 @@ div.individual-container:after {
   clear: both;
 }
 
-/* line 17, sass/partials/_team.scss */
+/* line 18, sass/partials/_team.scss */
 article.individual-member {
   position: relative;
   width: 25%;
@@ -1752,12 +1753,12 @@ article.individual-member {
   margin-right: 0;
 }
 @media screen and (max-width: 860px) {
-  /* line 17, sass/partials/_team.scss */
+  /* line 18, sass/partials/_team.scss */
   article.individual-member {
     width: 50%;
   }
 }
-/* line 26, sass/partials/_team.scss */
+/* line 27, sass/partials/_team.scss */
 article.individual-member img {
   position: relative;
   width: 100%;
@@ -1767,7 +1768,7 @@ article.individual-member img {
   padding: 0;
   display: block;
 }
-/* line 35, sass/partials/_team.scss */
+/* line 36, sass/partials/_team.scss */
 article.individual-member h3 {
   color: #ffffff;
   font-weight: 600;
@@ -1776,12 +1777,12 @@ article.individual-member h3 {
   text-shadow: 1px 1px 5px #969696;
 }
 @media screen and (max-width: 767px) {
-  /* line 35, sass/partials/_team.scss */
+  /* line 36, sass/partials/_team.scss */
   article.individual-member h3 {
     font-size: 1.3em;
   }
 }
-/* line 45, sass/partials/_team.scss */
+/* line 46, sass/partials/_team.scss */
 article.individual-member h4 {
   color: #ffffff;
   font-size: 1.1em;
@@ -1791,7 +1792,7 @@ article.individual-member h4 {
   text-shadow: 1px 1px 5px #969696;
 }
 
-/* line 55, sass/partials/_team.scss */
+/* line 56, sass/partials/_team.scss */
 div.individual-information {
   text-align: center;
   display: block;
@@ -1802,7 +1803,7 @@ div.individual-information {
   bottom: 6%;
 }
 
-/* line 65, sass/partials/_team.scss */
+/* line 66, sass/partials/_team.scss */
 article.individual-member a > div.overlay {
   width: 100%;
   height: 100%;
@@ -1817,7 +1818,7 @@ article.individual-member a > div.overlay {
   padding: 0;
 }
 
-/* line 80, sass/partials/_team.scss */
+/* line 81, sass/partials/_team.scss */
 article.individual-member a:hover > .overlay {
   width: 100%;
   height: 100%;
@@ -1830,7 +1831,7 @@ article.individual-member a:hover > .overlay {
   transition: opacity 0.4s ease-in-out;
 }
 
-/* line 92, sass/partials/_team.scss */
+/* line 93, sass/partials/_team.scss */
 article.individual-team-container {
   max-width: 68em;
   margin-left: auto;
@@ -1849,12 +1850,12 @@ article.individual-team-container:after {
   clear: both;
 }
 @media screen and (max-width: 860px) {
-  /* line 92, sass/partials/_team.scss */
+  /* line 93, sass/partials/_team.scss */
   article.individual-team-container {
     padding: 1.0em;
   }
 }
-/* line 99, sass/partials/_team.scss */
+/* line 100, sass/partials/_team.scss */
 article.individual-team-container div.individual-team-image {
   float: left;
   display: block;
@@ -1865,7 +1866,7 @@ article.individual-team-container div.individual-team-image {
 article.individual-team-container div.individual-team-image:last-child {
   margin-right: 0;
 }
-/* line 101, sass/partials/_team.scss */
+/* line 102, sass/partials/_team.scss */
 article.individual-team-container div.individual-team-image img {
   display: block;
 }
