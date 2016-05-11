@@ -12,8 +12,6 @@ jQuery(document).ready(function() {
 	});
 
 	
-
-	
 // Adds "All" to category filetering in portfolio
 
 	jQuery( "#filter_block > ul" ).prepend( "<li><a href='" + site_url + "/projects'>All</a></li>" );
@@ -25,7 +23,7 @@ jQuery(document).ready(function() {
 	jQuery( ".individual-container").css('display','block');
 
 
-	
+	getServiceYears();
 	// moveSlider();
 }); //End document.ready();
 
@@ -75,6 +73,17 @@ jQuery(document).ready(function() {
 		 	}, scroll_top_duration
 		);
 	});
+
+	function getServiceYears() {
+		var startYear = jQuery('.startYear').text();
+		var YearNum = parseInt(startYear);
+		var currentYear = (new Date).getFullYear();
+		var serviceYears = (currentYear - startYear);
+		jQuery('.startYears').html(serviceYears);
+		console.log(currentYear);
+		console.log(YearNum);
+		console.log(serviceYears);
+	}
 
 // function adjustSlider() {
 // 	if ((jQuery("body").hasClass("home")) && (Modernizr.mq('only all and (min-width: 768px)'))) {

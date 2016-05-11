@@ -521,6 +521,18 @@ function cmb2_lmc_metaboxes( array $meta_boxes ) {
 				'type' => 'text_medium',
 				// 'repeatable' => true,
 			),
+            array(
+                'name' => __( 'LMC Start Year', 'cmb2' ),
+                'desc' => __( ' ', 'cmb2' ),
+                'id'   => $prefix . 'team_lmc_year',
+                'type' => 'text_medium',
+            ),
+            array(
+                'name' => __( 'Industry Start Year', 'cmb2' ),
+                'desc' => __( ' ', 'cmb2' ),
+                'id'   => $prefix . 'team_start_year',
+                'type' => 'text_medium',
+            ),
 			array(
 				'name' => __( 'Profile Image', 'cmb2' ),
 				'desc' => __( 'Upload an image or enter a URL.', 'cmb2' ),

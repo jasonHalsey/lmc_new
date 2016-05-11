@@ -6,7 +6,12 @@ body.page-template-archive-team{
 		margin-bottom: 0.5em;
 	}
 }
-
+div.startYear{
+  display:none;
+}
+span.startYears{
+  display:inline;
+}
 div.individual-container{
 	width:100%;
 	@include outer-container;
