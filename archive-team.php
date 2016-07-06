@@ -27,6 +27,7 @@ Template Name: full-team
   		</article>
     <?php endwhile; ?>
     </div>
+    <div id="photographer">Photography by Mod Images</div>
 </div>
 </section>
 <?php wp_reset_query(); ?>
