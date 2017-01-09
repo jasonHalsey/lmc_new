@@ -44,8 +44,17 @@
       </span>
     </div>
 
-    <div id="holder_2">
-     <?php echo do_shortcode('[slick-slider category="8"]') ?>
+    <div id="holder">
+     <div id="main_slider" class="cycle-slideshow" data-cycle-auto-height=sentinel >
+	     	<?php while ( have_posts() ) : the_post(); ?>
+				<?php 
+					foreach(get_images_src('large','false') as $k => $i){
+					echo '<img src="'.$i[0].'" width="'.$i[1].'"  />';
+					}
+				?> 
+				<?php endwhile; ?>
+      </div> 
+    </div>
 
 
     </div>
