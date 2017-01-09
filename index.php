@@ -44,16 +44,10 @@
       </span>
     </div>
 
-    <div id="holder">
-      <div id="main_slider" class="cycle-slideshow" >
-	     	<?php while ( have_posts() ) : the_post(); ?>
-				<?php 
-					foreach(get_images_src('large','false') as $k => $i){
-					echo '<img src="'.$i[0].'" width="'.$i[1].'"  />';
-					}
-				?> 
-				<?php endwhile; ?>
-      </div> 
+    <div id="holder_2">
+     <?php echo do_shortcode('[slick-slider category="8"]') ?>
+
+
     </div>
 
     <!--#########################################################################################################-->
@@ -67,7 +61,7 @@
 	  Featured Projects
 	</h2>
 
-	<div id="project-container">
+	<div id="project-container_home">
 		<?php  
 			$args = array(
 		        'post_type'      => 'portfolio',
