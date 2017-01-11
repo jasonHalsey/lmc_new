@@ -5,7 +5,7 @@ body {
 	font-family: $secondary-font;
 }
 body.home {
-	background-color:#303030;
+	background-color:$dk-grey;
 }
 #trans-bars{
 	width:100%;
@@ -50,20 +50,15 @@ body.home {
 	div{
 		width:100%;
 		height:auto;
-		max-height: 65vh;
+		max-height: 78vh;
 		overflow: hidden;
 	}
 	img{
 		width:100%;
 		height:auto;
+		max-height: 75vh;
 		display:block;
 	}
-}
-#holder_2{
-	height:65vh;
-	border: 1px dotted #fff;
-	position:relative;
-	z-index:5;
 }
 #holder{
 	position: relative;
@@ -71,7 +66,7 @@ body.home {
 	left:0;
 	right:0;
 	z-index:5;
-	height:70vh;
+	height:78vh;
 	overflow: hidden;
 	width:100%;
 	@include media ($tablet) {
@@ -160,13 +155,13 @@ body.home {
 	top:0;
 	left:15%;
 	width:20%;
-	bottom:0;
+	bottom:8%;
 	z-index: 9;
 	max-width:266px;
 	> span{
 		display:block;
 		position: absolute;
-		bottom:12.3%;
+		bottom:6.3%;
 		font-family: $primary-font;
 		font-weight: 700;
 		font-size: 1.45em;
