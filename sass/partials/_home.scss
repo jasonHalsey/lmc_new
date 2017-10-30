@@ -5,7 +5,7 @@ body {
 	font-family: $secondary-font;
 }
 body.home {
-	background-color:$dk-grey;
+	background-color:#303030;
 }
 #trans-bars{
 	width:100%;
@@ -16,25 +16,20 @@ body.home {
 	left:0;
 	right:0;
 	margin-top: -120px;
-	@include media ($tablet) {
-		margin-top: 0;
-	}
 }
 
 #interior-trans-bars{
 	@extend #trans-bars;
 	@include clearfix;
 	padding-top: 0.35%;
-	// background-color: #471d11;
-	background-color: #595959;
+	background-color: #471d11;
 	margin-top:0;
 }
 
 .background-bar{
 	height:120px;
 	width:100%;
-	// background-color: #471d11;
-	background-color: #595959;
+	background-color: #471d11;
 	position:absolute;
 	top:0;
 	left:0;
@@ -47,32 +42,21 @@ body.home {
 
 #main_slider{
 	visibility:hidden;
+
 	div{
 		width:100%;
-		height:auto;
-		max-height: 78vh;
-		overflow: hidden;
+
 	}
 	img{
 		width:100%;
-		height:auto;
-		max-height: 75vh;
-		display:block;
 	}
 }
 #holder{
-	position: relative;
-	// top:120px;
+	position: absolute;
+	top:120px;
 	left:0;
 	right:0;
 	z-index:5;
-	height:78vh;
-	overflow: hidden;
-	width:100%;
-	@include media ($tablet) {
-		top: 0;
-		height:12.0em;
-	}
 }
 .logo{
 	text-align: center;
@@ -155,13 +139,13 @@ body.home {
 	top:0;
 	left:15%;
 	width:20%;
-	bottom:8%;
+	bottom:0;
 	z-index: 9;
 	max-width:266px;
 	> span{
 		display:block;
 		position: absolute;
-		bottom:6.3%;
+		bottom:12.3%;
 		font-family: $primary-font;
 		font-weight: 700;
 		font-size: 1.45em;
@@ -194,12 +178,6 @@ body.home {
 	@include outer-container();
 	@include clearfix;
 	margin-bottom: 4.0em;
-	@include media ($dropscreen) {
-		padding-left:2.0em;
-	}
-	@include media ($mobile) {
-		padding-left:0;
-	}
 	.home_content-text{
 		@include span-columns(8);
 		h2{
@@ -209,13 +187,11 @@ body.home {
 			text-transform: uppercase;
 		}
 		line-height: 2.0em;
-
 		@include media ($mobile) {
 			@include span-columns(12);
 			text-align: center;
 			padding:0.5em;
 		}
-
 	}
 	.home_content-side{
 		@include span-columns(4);
@@ -245,7 +221,7 @@ body.home {
 		font-family: $primary-font;
 		text-transform: uppercase;
 		font-size: 2.0em;
-		font-weight: 400;
+		font-weight: 300;
 	}
 	h2.port-header{
 		display:none;

@@ -1,4 +1,6 @@
 jQuery(document).ready(function() {
+	// adjustSlider();
+
 
 	jQuery('#main_slider').show();
 
@@ -20,10 +22,16 @@ jQuery(document).ready(function() {
 
 	jQuery( ".individual-container").css('display','block');
 
-	getServiceYears();
 
+	getServiceYears();
+	// moveSlider();
 }); //End document.ready();
 
+jQuery(window).resize(function() {
+	
+	// adjustSlider();
+	// moveSlider();
+});
 
 jQuery(document).ready(function() {
   var menuToggle = jQuery('#js-mobile-menu').unbind();
@@ -72,4 +80,24 @@ jQuery(document).ready(function() {
 		var currentYear = (new Date).getFullYear();
 		var serviceYears = (currentYear - startYear);
 		jQuery('.startYears').html(serviceYears);
+		console.log(currentYear);
+		console.log(YearNum);
+		console.log(serviceYears);
 	}
+
+// function adjustSlider() {
+// 	if ((jQuery("body").hasClass("home")) && (Modernizr.mq('only all and (min-width: 768px)'))) {
+// 	// if (jQuery("body").hasClass("home")) {
+		
+// 	  var sliderheight = jQuery('#main_slider img').height();
+// 		jQuery('#trans-bars').css( 'height', sliderheight + 110 );
+// 		jQuery('.tag').css( 'height', sliderheight + 110 );
+// 		console.log('adjustSlider fired ');
+// 	}else {
+// 		var sliderheight = jQuery('#main_slider img').height();
+// 		jQuery('#trans-bars').css( 'height', sliderheight + 110 );
+// 		onsole.log('adjustSlider kind of fired ');
+// 	}
+// }
+
+

@@ -1,22 +1,12 @@
 $medium-screen: em(640);
-#project-container_home{
-  @include outer-container;
-}
+
 #project-container{
   @include outer-container;
   margin-top: 2.0em;
-  .single-project{
-    @include span-columns(4);
-      &:nth-child(3n+1) { margin-right: 0; }
-    @include media ($mobile) {
-      @include span-columns(12);
-    }
-  }
 }
 
 .single-project{
   @include span-columns(4);
-    // &:nth-child(3n+1) { margin-right: 0; }
   @include media ($mobile) {
     @include span-columns(12);
   }
