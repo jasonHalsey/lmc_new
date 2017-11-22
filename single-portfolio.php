@@ -20,19 +20,20 @@
 			    <div class="single-contain">
 				    
 				    <div class="portfolio-bg">
-				    	<?php
-				    		foreach(get_images_src('large','false') as $k => $i){
-								echo '<img src="'.$i[0].'" width="'.$i[1].'" height="'.$i[2].'" />';
-								}
-							?>
-							<div class="cycle-pager"></div>
-						</div>
+				    	<?php cmb2_output_file_list( 'wiki_test_file_list', 'large' ); ?>
+						<div class="cycle-pager"></div>
+					</div>
 
 						<p>
-				    	<?php 
-				    		echo wpautop(get_post_meta( $post->ID, '_cmb2_portfolio_description', true )); 
-				    	?>
-				    </p>
+					    	<?php 
+					    		echo wpautop(get_post_meta( $post->ID, '_cmb2_portfolio_description', true )); 
+					    	?>
+				    	</p>
+
+				    	
+
+
+
 
 					</div>
 

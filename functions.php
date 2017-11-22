@@ -650,7 +650,25 @@ function cmb2_lmc_metaboxes( array $meta_boxes ) {
 				'type' => 'wysiwyg',
 				// 'repeatable' => true,
 			),
-			
+
+
+
+            array(
+                'name' => 'Test File List',
+                'desc' => '',
+                'id'   => 'wiki_test_file_list',
+                'type' => 'file_list',
+                // 'preview_size' => array( 100, 100 ), // Default: array( 50, 50 )
+                // 'query_args' => array( 'type' => 'image' ), // Only images attachment
+                // Optional, override default text strings
+                'text' => array(
+                    'add_upload_files_text' => 'Replacement', // default: "Add or Upload Files"
+                    'remove_image_text' => 'Replacement', // default: "Remove Image"
+                    'file_text' => 'Replacement', // default: "File:"
+                    'file_download_text' => 'Replacement', // default: "Download"
+                    'remove_text' => 'Replacement', // default: "Remove"
+                ),
+            ),			
 		),
 	);	
 
@@ -687,6 +705,29 @@ function cmb2_lmc_metaboxes( array $meta_boxes ) {
 
 	return $meta_boxes;
 }
+
+
+/**
+ * Sample template tag function for outputting a cmb2 file_list
+ *
+ * @param  string  $file_list_meta_key The field meta key. ('wiki_test_file_list')
+ * @param  string  $img_size           Size of image to show
+ */
+function cmb2_output_file_list( $file_list_meta_key, $img_size = 'medium' ) {
+
+    // Get the list of files
+    $files = get_post_meta( get_the_ID(), $file_list_meta_key, 1 );
+
+    // echo '<div class="file-list-wrap">';
+    // Loop through them and output an image
+    foreach ( (array) $files as $attachment_id => $attachment_url ) {
+        // echo '<div class="file-list-image">';
+        echo wp_get_attachment_image( $attachment_id, $img_size );
+        // echo '</div>';
+    }
+    // echo '</div>';
+}
+
 
 // Image Uploader Plugin
 
