@@ -6,41 +6,20 @@ Template Name: Bid Projects
   get_header('interior');
 ?>
 <section class="dark-stripe">
-    <h2>Projects For Bid</h2>
+    <h2>Join Our List Of Highly Qualified Subcontractors</h2>
     <div id="primary">
         <div id="content" role="main" class="all_projects">
-            <?php
-                $bidgroup = array( 'post_type' => 'bidproject', 'order' => 'Name');
-                $bidgrouploop = new WP_Query( $bidgroup );
-            ?>
-            <?php if ($bidgrouploop->have_posts()) { ?>
-                 <?php while ( $bidgrouploop->have_posts() ) : $bidgrouploop->the_post();?>
-                    <article id="post-<?php the_ID(); ?>" <?php post_class('project_container'); ?>>
-                        <div class="date-block">
-                            <h3>Due</h3>
-                            <h3><?php
-                                // Get unix date
-                                $some_date = get_post_meta( $post->ID, '_cmb2_project_datetime_timestamp', true );
-                                // Convert unix date
-                                $some_date = date( 'm/d', $some_date );
-                                // Print converted date
-                                echo $some_date;
-                            ?></h3>
-                        </div>
-                        <div class="project_information">
-                            <h2><a href="<?php the_permalink() ?>" ><?php the_title(); ?> <span class="bid_arrow">&#10140;</span></a></h2>
-                            <h4>
-                                <?php echo get_post_meta( $post->ID, '_cmb2_project_address', true ); ?>
-                                <?php echo get_post_meta( $post->ID, '_cmb2_project_city', true ); ?>, <?php echo get_post_meta( $post->ID, '_cmb2_project_state', true ); ?> <?php echo get_post_meta( $post->ID, '_cmb2_project_zip', true );
-                                ?>
-                            </h4>
-                        </div><!-- end  project_information -->
-                    </article>
-                <?php endwhile; ?>
-             <?php } else {?>
-                <h2>There are currently no projects up for bid.</h2>
-            <?php } ?>
-           
+        	<?php the_content() ?>
+        	<div id="request-form-instructions">
+        		<p>Thank you for your interest in LMC Construction. In order to develop a more complete knowledge of your Company and better match future Company opportunities to your Company’s capabilities please complete this form </p>
+
+        		<p>LMC Construction uses BuildingConnected to manage and distribute all of our bid opprotunities. To learn more about BuildingConnected, you can visit their site <a href="https://www.buildingconnected.com/">here.</a></p>
+        		
+        		<p><a href="https://www.buildingconnected.com/"><img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/buildingconnected_logo.png" /></a></p>
+        	</div>
+        	<div id="request-form-contain">
+        		<?php echo do_shortcode("[contact-form-7 id='7879' title='Bid List Request']"); ?>
+        	</div>         
         </div><!-- end #content -->
     </div><!-- end #primary -->
 </section>

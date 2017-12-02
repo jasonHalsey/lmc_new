@@ -357,32 +357,32 @@ function post_type_team()
   flush_rewrite_rules();
 };   
 
-// ----------------- Creates Bid Project Post Type
-add_action('init', 'post_type_bidproject');
-function post_type_bidproject() 
-{
-  $labels = array(
-    'name' => _x('Bid Projects', 'post type general name'),
-    'singular_name' => _x('Bid Project', 'post type singular name'),
-    'add_new' => _x('Add New Bid Project', 'bidproject'),
-    'add_new_item' => __('Add New Bid Project')
-  );
+// // ----------------- Creates Bid Project Post Type
+// add_action('init', 'post_type_bidproject');
+// function post_type_bidproject() 
+// {
+//   $labels = array(
+//     'name' => _x('Bid Projects', 'post type general name'),
+//     'singular_name' => _x('Bid Project', 'post type singular name'),
+//     'add_new' => _x('Add New Bid Project', 'bidproject'),
+//     'add_new_item' => __('Add New Bid Project')
+//   );
  
- $args = array(
-    'labels' => $labels,
-    'public' => true,
-    'publicly_queryable' => true,
-    'show_ui' => true, 
-    'query_var' => true,
-    'rewrite' => array( 'slug' => 'bidproject' ),
-    'capability_type' => 'post',
-    'hierarchical' => true,
-    'menu_position' => null,
-    'supports' => array('title')
-    ); 
-  register_post_type('bidproject',$args);
-  flush_rewrite_rules();
-};   
+//  $args = array(
+//     'labels' => $labels,
+//     'public' => true,
+//     'publicly_queryable' => true,
+//     'show_ui' => true, 
+//     'query_var' => true,
+//     'rewrite' => array( 'slug' => 'bidproject' ),
+//     'capability_type' => 'post',
+//     'hierarchical' => true,
+//     'menu_position' => null,
+//     'supports' => array('title')
+//     ); 
+//   register_post_type('bidproject',$args);
+//   flush_rewrite_rules();
+// };   
 
 // ----------------- Creates Portfolio Post Type
 add_action('init', 'post_type_portfolio');
@@ -543,79 +543,79 @@ function cmb2_lmc_metaboxes( array $meta_boxes ) {
 	);
 
 	
-	/**
-	 * Bid Projects Metabox Layout
-	 */
-	$meta_boxes['bidproject_metabox'] = array(
-		'id'            => 'bidproject_metabox',
-		'title'         => __( 'Project For Bid Room', 'cmb2' ),
-		'object_types'  => array( 'bidproject' ), // Post type
-		'context'       => 'normal',
-		'priority'      => 'high',
-		'show_names'    => true, // Show field names on the left
-		// 'cmb_styles' => true, // Enqueue the CMB stylesheet on the frontend
-		'fields'        => array(
+	// /**
+	//  * Bid Projects Metabox Layout
+	//  */
+	// $meta_boxes['bidproject_metabox'] = array(
+	// 	'id'            => 'bidproject_metabox',
+	// 	'title'         => __( 'Project For Bid Room', 'cmb2' ),
+	// 	'object_types'  => array( 'bidproject' ), // Post type
+	// 	'context'       => 'normal',
+	// 	'priority'      => 'high',
+	// 	'show_names'    => true, // Show field names on the left
+	// 	// 'cmb_styles' => true, // Enqueue the CMB stylesheet on the frontend
+	// 	'fields'        => array(
 			
-			array(
-				'name' => __( 'Street Address', 'cmb2' ),
-				'desc' => __( ' ', 'cmb2' ),
-				'id'   => $prefix . 'project_address',
-				'type' => 'text',
-				// 'repeatable' => true,
-			),
-			array(
-				'name' => __( 'City', 'cmb2' ),
-				'desc' => __( ' ', 'cmb2' ),
-				'id'   => $prefix . 'project_city',
-				'type' => 'text_small',
-				// 'repeatable' => true,
-			),
-			array(
-				'name' => __( 'State', 'cmb2' ),
-				'desc' => __( ' ', 'cmb2' ),
-				'id'   => $prefix . 'project_state',
-				'type' => 'text_small',
-				// 'repeatable' => true,
-			),
-			array(
-				'name' => __( 'ZIP', 'cmb2' ),
-				'desc' => __( ' ', 'cmb2' ),
-				'id'   => $prefix . 'project_zip',
-				'type' => 'text_small',
-				// 'repeatable' => true,
-			),
-			array(
-				'name' => __( 'Project  Contact', 'cmb2' ),
-				'desc' => __( ' ', 'cmb2' ),
-				'id'   => $prefix . 'project_contact',
-				'type' => 'text_medium',
-			),
-			array(
-				'name' => __( 'Bid Due', 'cmb2' ),
-				'desc' => __( ' ', 'cmb2' ),
-				'id'   => $prefix . 'project_datetime_timestamp',
-				'type' => 'text_datetime_timestamp',
-			),
-			array(
-				'name' => __( 'Summary Of Work', 'cmb2' ),
-				'desc' => __( ' ', 'cmb2' ),
-				'id'   => $prefix . 'project_work_summary',
-				'type' => 'wysiwyg',
-			),
-			array(
-				'name' => __( 'Plan Centers', 'cmb2' ),
-				'desc' => __( ' ', 'cmb2' ),
-				'id'   => $prefix . 'project_plan_centers',
-				'type' => 'wysiwyg',
-			),
-			array(
-				'name' => __( 'dropBox File', 'cmb2' ),
-				'desc' => __( ' ', 'cmb2' ),
-				'id'   => $prefix . 'project_dropBox',
-				'type' => 'wysiwyg',
-			),
-		),
-	);
+	// 		array(
+	// 			'name' => __( 'Street Address', 'cmb2' ),
+	// 			'desc' => __( ' ', 'cmb2' ),
+	// 			'id'   => $prefix . 'project_address',
+	// 			'type' => 'text',
+	// 			// 'repeatable' => true,
+	// 		),
+	// 		array(
+	// 			'name' => __( 'City', 'cmb2' ),
+	// 			'desc' => __( ' ', 'cmb2' ),
+	// 			'id'   => $prefix . 'project_city',
+	// 			'type' => 'text_small',
+	// 			// 'repeatable' => true,
+	// 		),
+	// 		array(
+	// 			'name' => __( 'State', 'cmb2' ),
+	// 			'desc' => __( ' ', 'cmb2' ),
+	// 			'id'   => $prefix . 'project_state',
+	// 			'type' => 'text_small',
+	// 			// 'repeatable' => true,
+	// 		),
+	// 		array(
+	// 			'name' => __( 'ZIP', 'cmb2' ),
+	// 			'desc' => __( ' ', 'cmb2' ),
+	// 			'id'   => $prefix . 'project_zip',
+	// 			'type' => 'text_small',
+	// 			// 'repeatable' => true,
+	// 		),
+	// 		array(
+	// 			'name' => __( 'Project  Contact', 'cmb2' ),
+	// 			'desc' => __( ' ', 'cmb2' ),
+	// 			'id'   => $prefix . 'project_contact',
+	// 			'type' => 'text_medium',
+	// 		),
+	// 		array(
+	// 			'name' => __( 'Bid Due', 'cmb2' ),
+	// 			'desc' => __( ' ', 'cmb2' ),
+	// 			'id'   => $prefix . 'project_datetime_timestamp',
+	// 			'type' => 'text_datetime_timestamp',
+	// 		),
+	// 		array(
+	// 			'name' => __( 'Summary Of Work', 'cmb2' ),
+	// 			'desc' => __( ' ', 'cmb2' ),
+	// 			'id'   => $prefix . 'project_work_summary',
+	// 			'type' => 'wysiwyg',
+	// 		),
+	// 		array(
+	// 			'name' => __( 'Plan Centers', 'cmb2' ),
+	// 			'desc' => __( ' ', 'cmb2' ),
+	// 			'id'   => $prefix . 'project_plan_centers',
+	// 			'type' => 'wysiwyg',
+	// 		),
+	// 		array(
+	// 			'name' => __( 'dropBox File', 'cmb2' ),
+	// 			'desc' => __( ' ', 'cmb2' ),
+	// 			'id'   => $prefix . 'project_dropBox',
+	// 			'type' => 'wysiwyg',
+	// 		),
+	// 	),
+	// );
 
 	/**
 	 * Portfolio Metabox Layout
@@ -654,7 +654,7 @@ function cmb2_lmc_metaboxes( array $meta_boxes ) {
 
 
             array(
-                'name' => 'Test File List',
+                'name' => 'Upload Project Images One At A Time',
                 'desc' => '',
                 'id'   => 'wiki_test_file_list',
                 'type' => 'file_list',

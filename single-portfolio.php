@@ -16,26 +16,17 @@
 		 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 			    <h2><?php echo the_title(); ?></h2>
-
-			    <div class="single-contain">
-				    
+			    <div class="single-contain">			    
 				    <div class="portfolio-bg">
 				    	<?php cmb2_output_file_list( 'wiki_test_file_list', 'large' ); ?>
 						<div class="cycle-pager"></div>
 					</div>
-
-						<p>
-					    	<?php 
-					    		echo wpautop(get_post_meta( $post->ID, '_cmb2_portfolio_description', true )); 
-					    	?>
-				    	</p>
-
-				    	
-
-
-
-
-					</div>
+					<p>
+				    	<?php 
+				    		echo wpautop(get_post_meta( $post->ID, '_cmb2_portfolio_description', true )); 
+				    	?>
+			    	</p>
+				</div>
 
 			</article>
 

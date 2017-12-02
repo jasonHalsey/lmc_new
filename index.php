@@ -9,22 +9,12 @@
 ?>
 
 
-
-
-  <div class="background-bar"></div>
   <section id="trans-bars">
 
     <!--#########################################################################################################-->
 
     <div class="logo-cta">
-      <div class="tag">
-        <a href="<?php bloginfo('url');?>" class="logo">
-          <img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/LMC_logo.svg" />
-        </a>
-        <div class="ctas">
-          <a href="<?php echo bloginfo('url'); ?>/bid-room/">Bid Room</a>
-          <a href="<?php echo bloginfo('url'); ?>/contact/">Contact Us</a>
-        </div>
+      <div class="tag">       
         <span>
           We’re<br />Involved<br /> at <span>LMC Construction.</span>
         </span>
@@ -32,36 +22,23 @@
     </div>
 
     <!--#########################################################################################################-->
-
- 
-    <!--#########################################################################################################-->
-
-    <div class="mission">      
-      <span>
-        <p>At LMC Construction, we’re always building. We start well before we begin construction, front-loading each project with collaboration, clear communication and a can-do frame of mind. Some might say that’s a lot of “Cs.” Our clients find it’s a blueprint for success.</p>
-
-        <p>Based in Tualatin, Oregon, we’ve been told we’re a little different than other general contractors and construction management companies in the area. We like that.</p>
-      </span>
-    </div>
-
     <div id="holder">
-     <div id="main_slider" class="cycle-slideshow" data-cycle-auto-height=sentinel >
-	     	<?php while ( have_posts() ) : the_post(); ?>
-				<?php 
-					foreach(get_images_src('large','false') as $k => $i){
-					echo '<img src="'.$i[0].'" width="'.$i[1].'"  />';
-					}
-				?> 
-				<?php endwhile; ?>
-      </div> 
+    	<?php echo do_shortcode("[rev_slider alias='lmc_home']"); ?>
     </div>
-
-
-    </div>
-
-    <!--#########################################################################################################-->
-
+ 
   </section>
+<section class="light-stripe">
+	<div class="home_content_top">
+		<div class="home_content_top-title">
+			<h2>Always Building</h2>
+		</div>
+		<div class="home_content_top-text">
+			<p>At LMC Construction, we’re always building. We start well before we begin construction, front-loading each project with collaboration, clear communication and a can-do frame of mind. Some might say that’s a lot of “Cs.” Our clients find it’s a blueprint for success.</p>
+
+		    <p>Based in Tualatin, Oregon, we’ve been told we’re a little different than other general contractors and construction management companies in the area. We like that.</p>
+		</div>
+	</div>
+</section>
 
 <section class="dark-stripe">
 

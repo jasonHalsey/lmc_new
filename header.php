@@ -33,20 +33,29 @@
 </head>
 
 
-<div class="wrapper-for-content-outside-of-footer">
+
 <body <?php body_class('Site'); ?> "cd-container">
-  
-   <header class="navigation" role="banner">
+  <section id="interior-trans-bars">
 
-      <div class="navigation-wrapper">
-      <div class="mobile-logo">
-        <img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/LMC_logo.svg" />
-      </div>
-        <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu"><img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/menu-open-large.png" /></a>
-        <nav role="navigation">
-          <?php wp_nav_menu( array( 'menu_id' => 'js-navigation-menu', 'theme_location' => 'primary', 'menu_class' => 'navigation-menu show' ) ); ?>
-        </nav>    
-      </div>
-    </header>
+    <!--#########################################################################################################-->
+
+    <div class="interior-logo-cta">
+        <a href="<?php bloginfo('url');?>" class="logo">
+          <img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/LMC_logo.svg" />
+        </a>
+    </div>
+
+    <!--#########################################################################################################-->
+
+<header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu"><img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/menu-open-large.png" /></a>
+    <nav role="navigation">
+      <?php wp_nav_menu( array( 'menu_id' => 'js-navigation-menu', 'theme_location' => 'primary', 'menu_class' => 'navigation-menu show' ) ); ?>
+    </nav>    
+  </div>
+</header>
 
 
+    <!--#########################################################################################################-->
+  </section>

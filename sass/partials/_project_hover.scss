@@ -5,10 +5,18 @@ $medium-screen: em(640);
   margin-top: 2.0em;
 }
 
+#project-container_home{
+  @include outer-container;
+  margin-top: 2.0em;
+}
+
 .single-project{
   @include span-columns(4);
   @include media ($mobile) {
     @include span-columns(12);
+  }
+  &:nth-child(3n+3){
+    margin-right: 0;
   }
 }
 
