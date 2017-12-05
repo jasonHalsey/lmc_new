@@ -620,57 +620,57 @@ function cmb2_lmc_metaboxes( array $meta_boxes ) {
 	/**
 	 * Portfolio Metabox Layout
 	 */
-	$meta_boxes['portfolio_metabox'] = array(
-		'id'            => 'portfolio_metabox',
-		'title'         => __( 'LMC Portfolio Project', 'cmb2' ),
-		'object_types'  => array( 'portfolio' ), // Post type
-		'context'       => 'normal',
-		'priority'      => 'high',
-		'show_names'    => true, // Show field names on the left
-		// 'cmb_styles' => true, // Enqueue the CMB stylesheet on the frontend
-		'fields'        => array(
+	// $meta_boxes['portfolio_metabox'] = array(
+	// 	'id'            => 'portfolio_metabox',
+	// 	'title'         => __( 'LMC Portfolio Project', 'cmb2' ),
+	// 	'object_types'  => array( 'portfolio' ), // Post type
+	// 	'context'       => 'normal',
+	// 	'priority'      => 'high',
+	// 	'show_names'    => true, // Show field names on the left
+	// 	// 'cmb_styles' => true, // Enqueue the CMB stylesheet on the frontend
+	// 	'fields'        => array(
 			
-			array(
-				'name' => __( 'Featured Project', 'cmb2' ),
-				'desc' => __( 'Only 3 Projects Be Displayed At One Time', 'cmb2' ),
-				'id'   => $prefix . 'portfolio_checkbox',
-				'type' => 'checkbox',
-			),
-			array(
-				'name' => __( 'Project Excerpt', 'cmb2' ),
-				'desc' => __( '100 Character Max', 'cmb2' ),
-				'id'   => $prefix . 'portfolio_excerpt',
-				'type' => 'wysiwyg',
-				// 'repeatable' => true,
-			),
-			array(
-				'name' => __( 'Full Project Description', 'cmb2' ),
-				'desc' => __( ' ', 'cmb2' ),
-				'id'   => $prefix . 'portfolio_description',
-				'type' => 'wysiwyg',
-				// 'repeatable' => true,
-			),
+	// 		array(
+	// 			'name' => __( 'Featured Project', 'cmb2' ),
+	// 			'desc' => __( 'Only 3 Projects Be Displayed At One Time', 'cmb2' ),
+	// 			'id'   => $prefix . 'portfolio_checkbox',
+	// 			'type' => 'checkbox',
+	// 		),
+	// 		array(
+	// 			'name' => __( 'Project Excerpt', 'cmb2' ),
+	// 			'desc' => __( '100 Character Max', 'cmb2' ),
+	// 			'id'   => $prefix . 'portfolio_excerpt',
+	// 			'type' => 'wysiwyg',
+	// 			// 'repeatable' => true,
+	// 		),
+	// 		array(
+	// 			'name' => __( 'Full Project Description', 'cmb2' ),
+	// 			'desc' => __( ' ', 'cmb2' ),
+	// 			'id'   => $prefix . 'portfolio_description',
+	// 			'type' => 'wysiwyg',
+	// 			// 'repeatable' => true,
+	// 		),
 
 
 
-            array(
-                'name' => 'Upload Project Images One At A Time',
-                'desc' => '',
-                'id'   => 'wiki_test_file_list',
-                'type' => 'file_list',
-                // 'preview_size' => array( 100, 100 ), // Default: array( 50, 50 )
-                // 'query_args' => array( 'type' => 'image' ), // Only images attachment
-                // Optional, override default text strings
-                'text' => array(
-                    'add_upload_files_text' => 'Replacement', // default: "Add or Upload Files"
-                    'remove_image_text' => 'Replacement', // default: "Remove Image"
-                    'file_text' => 'Replacement', // default: "File:"
-                    'file_download_text' => 'Replacement', // default: "Download"
-                    'remove_text' => 'Replacement', // default: "Remove"
-                ),
-            ),			
-		),
-	);	
+ //            array(
+ //                'name' => 'Upload Project Images One At A Time',
+ //                'desc' => '',
+ //                'id'   => 'wiki_test_file_list',
+ //                'type' => 'file_list',
+ //                // 'preview_size' => array( 100, 100 ), // Default: array( 50, 50 )
+ //                // 'query_args' => array( 'type' => 'image' ), // Only images attachment
+ //                // Optional, override default text strings
+ //                'text' => array(
+ //                    'add_upload_files_text' => 'Replacement', // default: "Add or Upload Files"
+ //                    'remove_image_text' => 'Replacement', // default: "Remove Image"
+ //                    'file_text' => 'Replacement', // default: "File:"
+ //                    'file_download_text' => 'Replacement', // default: "Download"
+ //                    'remove_text' => 'Replacement', // default: "Remove"
+ //                ),
+ //            ),			
+	// 	),
+	// );	
 
 
 	/**
@@ -707,33 +707,33 @@ function cmb2_lmc_metaboxes( array $meta_boxes ) {
 }
 
 
-/**
- * Sample template tag function for outputting a cmb2 file_list
- *
- * @param  string  $file_list_meta_key The field meta key. ('wiki_test_file_list')
- * @param  string  $img_size           Size of image to show
- */
-function cmb2_output_file_list( $file_list_meta_key, $img_size = 'medium' ) {
+// /**
+//  * Sample template tag function for outputting a cmb2 file_list
+//  *
+//  * @param  string  $file_list_meta_key The field meta key. ('wiki_test_file_list')
+//  * @param  string  $img_size           Size of image to show
+//  */
+// function cmb2_output_file_list( $file_list_meta_key, $img_size = 'medium' ) {
 
-    // Get the list of files
-    $files = get_post_meta( get_the_ID(), $file_list_meta_key, 1 );
+//     // Get the list of files
+//     $files = get_post_meta( get_the_ID(), $file_list_meta_key, 1 );
 
-    // echo '<div class="file-list-wrap">';
-    // Loop through them and output an image
-    foreach ( (array) $files as $attachment_id => $attachment_url ) {
-        // echo '<div class="file-list-image">';
-        echo wp_get_attachment_image( $attachment_id, $img_size );
-        // echo '</div>';
-    }
-    // echo '</div>';
-}
+//     // echo '<div class="file-list-wrap">';
+//     // Loop through them and output an image
+//     foreach ( (array) $files as $attachment_id => $attachment_url ) {
+//         // echo '<div class="file-list-image">';
+//         echo wp_get_attachment_image( $attachment_id, $img_size );
+//         // echo '</div>';
+//     }
+//     // echo '</div>';
+// }
 
 
 // Image Uploader Plugin
 
     add_filter('images_cpt','my_image_cpt');
     function my_image_cpt(){
-        $cpts = array('page','portfolio','service');
+        $cpts = array('page','service');
         return $cpts;
     }
 

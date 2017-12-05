@@ -544,8 +544,9 @@ div.mc-image {
 /* line 106, sass/partials/_project_hover.scss */
 .hover-tile-outer .hover-tile-hidden p {
   color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 0.15em 0;
 }
-/* line 108, sass/partials/_project_hover.scss */
+/* line 109, sass/partials/_project_hover.scss */
 .hover-tile-outer .hover-tile-hidden p span {
   font-family: "Oswald", sans-serif;
   color: #fff;
@@ -1241,11 +1242,13 @@ div.portfolio-bg {
 }
 /* line 9, sass/partials/_structure.scss */
 div.portfolio-bg img {
-  width: 100%;
-  height: auto;
+  min-height: 100%;
+  width: auto;
+  min-width: 100%;
+  overflow: hidden;
 }
 
-/* line 15, sass/partials/_structure.scss */
+/* line 17, sass/partials/_structure.scss */
 #main {
   max-width: 68em;
   margin-left: auto;
@@ -1258,18 +1261,18 @@ div.portfolio-bg img {
   clear: both;
 }
 
-/* line 20, sass/partials/_structure.scss */
+/* line 22, sass/partials/_structure.scss */
 .pgm img {
   width: 100% !important;
   height: auto;
 }
-/* line 24, sass/partials/_structure.scss */
+/* line 26, sass/partials/_structure.scss */
 .pgm .canvas {
   width: 100% !important;
   height: auto;
 }
 
-/* line 30, sass/partials/_structure.scss */
+/* line 32, sass/partials/_structure.scss */
 .single-contain {
   max-width: 68em;
   margin-left: auto;
@@ -1288,18 +1291,18 @@ div.portfolio-bg img {
   clear: both;
 }
 @media screen and (max-width: 767px) {
-  /* line 30, sass/partials/_structure.scss */
+  /* line 32, sass/partials/_structure.scss */
   .single-contain {
     padding: 1.5em;
   }
 }
 
-/* line 40, sass/partials/_structure.scss */
+/* line 42, sass/partials/_structure.scss */
 #filter_block {
   display: none;
 }
 
-/* line 44, sass/partials/_structure.scss */
+/* line 46, sass/partials/_structure.scss */
 .col_list {
   -webkit-columns: 3 200px;
   -moz-columns: 3 200px;
@@ -1309,7 +1312,7 @@ div.portfolio-bg img {
   padding: 2.0em 0;
 }
 
-/* line 54, sass/partials/_structure.scss */
+/* line 56, sass/partials/_structure.scss */
 body.single-portfolio h2 {
   display: block;
   background-color: #242424;
@@ -1321,12 +1324,13 @@ body.single-portfolio h2 {
   font-size: 2.0em;
   font-weight: 300;
 }
-/* line 65, sass/partials/_structure.scss */
+/* line 67, sass/partials/_structure.scss */
 body.single-portfolio .single-contain {
   color: #bababa;
+  margin-top: 1.0em;
 }
 
-/* line 70, sass/partials/_structure.scss */
+/* line 73, sass/partials/_structure.scss */
 .cycle-pager {
   position: absolute;
   bottom: 0;
@@ -1336,12 +1340,12 @@ body.single-portfolio .single-contain {
   font-size: 2.5em;
 }
 
-/* line 78, sass/partials/_structure.scss */
+/* line 81, sass/partials/_structure.scss */
 .cycle-pager span.cycle-pager-active {
   color: #D69746;
 }
 
-/* line 79, sass/partials/_structure.scss */
+/* line 82, sass/partials/_structure.scss */
 .cycle-pager > * {
   cursor: pointer;
 }

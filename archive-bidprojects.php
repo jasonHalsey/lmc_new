@@ -9,7 +9,7 @@ Template Name: Bid Projects
     <h2>Join Our List Of Highly Qualified Subcontractors</h2>
     <div id="primary">
         <div id="content" role="main" class="all_projects">
-        	<?php the_content() ?>
+        	
         	<div id="request-form-instructions">
         		<p>Thank you for your interest in LMC Construction. In order to develop a more complete knowledge of your Company and better match future Company opportunities to your Company’s capabilities please complete this form </p>
 

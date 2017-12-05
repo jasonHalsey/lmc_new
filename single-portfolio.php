@@ -18,13 +18,20 @@
 			    <h2><?php echo the_title(); ?></h2>
 			    <div class="single-contain">			    
 				    <div class="portfolio-bg">
-				    	<?php cmb2_output_file_list( 'wiki_test_file_list', 'large' ); ?>
+				    	<?php 
+
+							$images = get_field('portfolio_images');
+
+							if( $images ): ?>
+							        <?php foreach( $images as $image ): ?>
+							                
+							            <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+							             
+							        <?php endforeach; ?>
+						<?php endif; ?>
 						<div class="cycle-pager"></div>
 					</div>
-					<p>
-				    	<?php 
-				    		echo wpautop(get_post_meta( $post->ID, '_cmb2_portfolio_description', true )); 
-				    	?>
+					<p><?php the_field('portfolio_description'); ?>
 			    	</p>
 				</div>
 

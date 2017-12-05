@@ -37,7 +37,7 @@ Template Name: Portfolio Archive
                     <div class="hover-tile hover-tile-hidden">
                       <h4><?php the_title(); ?></h4>
                       <a href="<?php the_permalink() ?>" ></a>
-                      <p><?php echo get_post_meta( $post->ID, '_cmb2_portfolio_excerpt', true ); ?>&nbsp;<span>Read More >></span></p>
+                      <p><?php the_field('portfolio_excerpt'); ?><span>Read More >></span></p>
                     </div>
                   </div>
                 </div>

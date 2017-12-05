@@ -51,8 +51,9 @@
 		<?php  
 			$args = array(
 		        'post_type'      => 'portfolio',
-		        'meta_key'       => '_cmb2_portfolio_checkbox',
-		        'meta_value'	 => 'on',
+		        // 'meta_key'       => '_cmb2_portfolio_checkbox',
+		        // 'meta_key'       => 'portfolio_checkbox',
+		        // 'meta_value'	 => 'on',
 		        'order'          => 'ASC',
 		        'posts_per_page' => 3,
 		    );
@@ -61,6 +62,7 @@
 		<?php $the_query = new WP_Query( $args ); ?>
 		<?php if ( $the_query->have_posts() ) : ?>
 			<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
 
 			<?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 5600,1000 ), false, '' ); ?>
 			<div class="single-project">
@@ -72,11 +74,13 @@
 				    <div class="hover-tile hover-tile-hidden">
 				      <h4><?php the_title(); ?></h4>
 				      <a href="<?php the_permalink() ?>" ></a>
-				      <p><?php echo get_post_meta( $post->ID, '_cmb2_portfolio_excerpt', true ); ?>&nbsp;<span>Read More >></span></p>
+				      <p><?php the_field('portfolio_excerpt'); ?>&nbsp;<span>Read More >></span></p>
 				    </div>
 				  </div>
 				</div>
 			</div><!-- End single-project -->
+			<?php $fields = get_field_objects();
+var_dump( $fields ); ?>
 		    <?php endwhile; ?>
 		 <?php endif ?>
 
