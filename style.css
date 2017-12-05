@@ -429,7 +429,7 @@ div.mc-image {
   }
 }
 /* line 18, sass/partials/_project_hover.scss */
-.single-project:nth-child(3n+3) {
+.single-project:nth-child(3n+4) {
   margin-right: 0;
 }
 

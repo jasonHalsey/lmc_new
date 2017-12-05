@@ -15,7 +15,7 @@ $medium-screen: em(640);
   @include media ($mobile) {
     @include span-columns(12);
   }
-  &:nth-child(3n+3){
+  &:nth-child(3n+4){
     margin-right: 0;
   }
 }

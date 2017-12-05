@@ -48,50 +48,50 @@
 	</h2>
 
 	<div id="project-container_home">
-		<?php  
-			$args = array(
-		        'post_type'      => 'portfolio',
-		        // 'meta_key'       => '_cmb2_portfolio_checkbox',
-		        // 'meta_key'       => 'portfolio_checkbox',
-		        // 'meta_value'	 => 'on',
-		        'order'          => 'ASC',
-		        'posts_per_page' => 3,
-		    );
-		?>
-
-		<?php $the_query = new WP_Query( $args ); ?>
-		<?php if ( $the_query->have_posts() ) : ?>
-			<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
 
+	<?php
+		$posts = get_posts(array(
+			'numberposts' => 3,
+			'post_type' => 'portfolio',
+			'meta_key' => 'portfolio_checkbox',
+			// 'meta_value' => 'on'
+		));
+
+		if($posts)
+		{ 
+				foreach($posts as $post)
+			{ ?>
 			<?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 5600,1000 ), false, '' ); ?>
-			<div class="single-project">
-				<div class="hover-tile-outer"  style="background-image: url(<?php echo $src[0]; ?> ) !important; background-size: cover!important; background-position: 0 50%;">
-				  <div class="hover-tile-container">
-				    <div class="hover-tile hover-tile-visible">
-				      <span><?php the_title(); ?></span>
-				    </div>
-				    <div class="hover-tile hover-tile-hidden">
-				      <h4><?php the_title(); ?></h4>
-				      <a href="<?php the_permalink() ?>" ></a>
-				      <p><?php the_field('portfolio_excerpt'); ?>&nbsp;<span>Read More >></span></p>
-				    </div>
-				  </div>
-				</div>
-			</div><!-- End single-project -->
-			<?php $fields = get_field_objects();
-var_dump( $fields ); ?>
-		    <?php endwhile; ?>
-		 <?php endif ?>
+					<div class="single-project">
+						<div class="hover-tile-outer"  style="background-image: url(<?php echo $src[0]; ?> ) !important; background-size: cover!important; background-position: 0 50%;">
+						  <div class="hover-tile-container">
+						    <div class="hover-tile hover-tile-visible">
+						      <span><?php the_title(); ?></span>
+						    </div>
+						    <div class="hover-tile hover-tile-hidden">
+						      <h4><?php the_title(); ?></h4>
+						      <a href="<?php the_permalink() ?>" ></a>
+						      <p><?php the_field('portfolio_excerpt'); ?>&nbsp;<span>Read More >></span></p>
+						    </div>
+						  </div>
+						</div>
+					</div><!-- End single-project -->
+		<?php 
+			}
+		}
+	?>
+
 
 	</div><!-- End projet-container -->
 </section> <!-- End dark-stripe -->
 <section class="light-stripe">
 	<div class="home_content">
 		<div class="home_content-text">
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php echo the_content(); ?>
-			<?php endwhile; ?>
+		<h2>We're Involved</h2>
+		<p>From preconstruction to building turnover and beyond, we’re involved at every phase—building lasting relationships with our clients, architects, engineers, community partners, government housing agencies, subcontractors and residents. That’s made us a go-to partner for multi-family commercial developers specializing in new construction, renovations and tenant improvements, especially in the affordable housing market.</p>
+
+		<p>Our focus is on helping our clients develop the best-laid plans and then executing them with the best team, quality and price.</p>
 		</div><!-- End home_content-text -->
 		<div class="home_content-side">
 			<img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/GHBotY2013-LowIncomeBuilder.png" />
