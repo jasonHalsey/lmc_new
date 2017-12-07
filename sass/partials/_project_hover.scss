@@ -113,3 +113,21 @@ $medium-screen: em(640);
     }
   }
 }
+
+section.project_container{
+  padding:2.0em 0;
+  @include outer-container;
+  display: flex;
+  .project_title_block{
+    @include span-columns(4);
+    flex: 1;
+    border-right:1px solid #fff;
+    h2{
+      background-color: transparent;
+    }
+  }
+  .project_content_block{
+    @include span-columns(8);
+    flex: 1;
+  }
+}

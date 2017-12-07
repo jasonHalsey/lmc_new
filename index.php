@@ -88,10 +88,10 @@
 <section class="light-stripe">
 	<div class="home_content">
 		<div class="home_content-text">
-		<h2>We're Involved</h2>
-		<p>From preconstruction to building turnover and beyond, we’re involved at every phase—building lasting relationships with our clients, architects, engineers, community partners, government housing agencies, subcontractors and residents. That’s made us a go-to partner for multi-family commercial developers specializing in new construction, renovations and tenant improvements, especially in the affordable housing market.</p>
+			<h2>We're Involved</h2>
+			<p>From preconstruction to building turnover and beyond, we’re involved at every phase—building lasting relationships with our clients, architects, engineers, community partners, government housing agencies, subcontractors and residents. That’s made us a go-to partner for multi-family commercial developers specializing in new construction, renovations and tenant improvements, especially in the affordable housing market.</p>
 
-		<p>Our focus is on helping our clients develop the best-laid plans and then executing them with the best team, quality and price.</p>
+			<p>Our focus is on helping our clients develop the best-laid plans and then executing them with the best team, quality and price.</p>
 		</div><!-- End home_content-text -->
 		<div class="home_content-side">
 			<img src="<?php echo bloginfo('url'); ?>/wp-content/themes/lmc_new/images/GHBotY2013-LowIncomeBuilder.png" />

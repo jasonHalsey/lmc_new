@@ -552,6 +552,50 @@ div.mc-image {
   color: #fff;
 }
 
+/* line 117, sass/partials/_project_hover.scss */
+section.project_container {
+  padding: 2.0em 0;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+/* line 15, sass/bourbon/addons/_clearfix.scss */
+section.project_container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 121, sass/partials/_project_hover.scss */
+section.project_container .project_title_block {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  flex: 1;
+  border-right: 1px solid #fff;
+}
+/* line 38, sass/neat/grid/_span-columns.scss */
+section.project_container .project_title_block:last-child {
+  margin-right: 0;
+}
+/* line 125, sass/partials/_project_hover.scss */
+section.project_container .project_title_block h2 {
+  background-color: transparent;
+}
+/* line 129, sass/partials/_project_hover.scss */
+section.project_container .project_content_block {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  flex: 1;
+}
+/* line 38, sass/neat/grid/_span-columns.scss */
+section.project_container .project_content_block:last-child {
+  margin-right: 0;
+}
+
 /**
  * 1. Avoid the IE 10-11 `min-height` bug.
  * 2. Set `flex-shrink` to `0` to prevent some browsers from

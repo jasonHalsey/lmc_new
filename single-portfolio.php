@@ -31,8 +31,13 @@
 						<?php endif; ?>
 						<div class="cycle-pager"></div>
 					</div>
-					<p><?php the_field('portfolio_description'); ?>
-			    	</p>
+					<section class="project_container">
+						<div class="project_title_block"><h2><?php echo the_title(); ?></h2></div>
+						<div class="project_content_block">
+							<?php the_field('portfolio_description'); ?>
+						</div>
+					</section>
+					
 				</div>
 
 			</article>
