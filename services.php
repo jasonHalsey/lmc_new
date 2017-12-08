@@ -30,8 +30,10 @@ Template Name: services
 
         <div class="container abbot_top ">
             <div class="brand-content-wrapper">
-                <div class="brand-content">
-                    <h1><?php the_title(); ?></h1>
+                <div class="brand-title">
+                     <h1><?php the_title(); ?></h1>
+                </div>
+                <div class="brand-content">                  
                     <?php echo get_post_meta( $post->ID, '_cmb2_service_description', true ); ?>
                     </div>
                 </div>

@@ -2321,7 +2321,7 @@ div.container {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 /* line 100, sass/partials/_parallax.scss */
 div.container img {
@@ -2364,7 +2364,7 @@ section.module_brand.content_brand {
 
 /* line 138, sass/partials/_parallax.scss */
 div.brand-content-wrapper {
-  height: 200px;
+  min-height: 200px;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
@@ -2376,33 +2376,75 @@ div.brand-content-wrapper:after {
   display: table;
   clear: both;
 }
+/* line 15, sass/bourbon/addons/_clearfix.scss */
+div.brand-content-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-/* line 143, sass/partials/_parallax.scss */
+/* line 144, sass/partials/_parallax.scss */
+div.brand-title {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  position: relative;
+  min-height: 200px;
+  padding: 2.0em 1.0em 2.0em;
+}
+/* line 38, sass/neat/grid/_span-columns.scss */
+div.brand-title:last-child {
+  margin-right: 0;
+}
+/* line 149, sass/partials/_parallax.scss */
+div.brand-title h1 {
+  display: block;
+  padding: 0.5em 0;
+  text-align: center;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.0em;
+  font-weight: 300;
+  position: absolute;
+  transform: translate(-50%, 50%);
+  border-bottom: 1px solid #fff;
+}
+
+/* line 165, sass/partials/_parallax.scss */
 div.brand-content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
   display: table-cell;
   vertical-align: middle;
-  padding: 0 1.0em 2.0em;
+  padding: 2.0em 1.0em 2.0em;
+  line-height: 2.0;
+  min-height: 200px;
 }
-/* line 147, sass/partials/_parallax.scss */
+/* line 38, sass/neat/grid/_span-columns.scss */
+div.brand-content:last-child {
+  margin-right: 0;
+}
+/* line 172, sass/partials/_parallax.scss */
+div.brand-content ul.contentList {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+/* line 176, sass/partials/_parallax.scss */
 div.brand-content p {
   color: #666;
   line-height: 2.85em;
   padding: 0 0.75em;
 }
-/* line 151, sass/partials/_parallax.scss */
+/* line 180, sass/partials/_parallax.scss */
 div.brand-content p:first-child {
   margin-top: 0.75em;
 }
-/* line 155, sass/partials/_parallax.scss */
-div.brand-content h1 {
-  font-family: "proxima-nova",sans-serif;
-  color: #fff;
-  line-height: 2.0em;
-  margin-top: 0.25em;
-  text-transform: uppercase;
-}
 
-/* line 163, sass/partials/_parallax.scss */
+/* line 185, sass/partials/_parallax.scss */
 section.module.parallax_brand {
   height: 400px;
   background-position: 50% 50%;
@@ -2414,45 +2456,45 @@ section.module.parallax_brand {
   background-size: cover;
 }
 @media screen and (max-width: 860px) {
-  /* line 163, sass/partials/_parallax.scss */
+  /* line 185, sass/partials/_parallax.scss */
   section.module.parallax_brand {
     height: 200px;
   }
 }
 
-/* line 177, sass/partials/_parallax.scss */
+/* line 199, sass/partials/_parallax.scss */
 div.abbot_top {
   border-top: 1px solid #bababa;
   border-bottom: 1px solid #bababa;
 }
-/* line 180, sass/partials/_parallax.scss */
+/* line 202, sass/partials/_parallax.scss */
 div.abbot_top p {
   margin-bottom: 0;
   padding: 0.5em 2.0em 1.5em;
 }
-/* line 184, sass/partials/_parallax.scss */
+/* line 206, sass/partials/_parallax.scss */
 div.abbot_top p:last-child {
   padding: 0.5em 2.0em 2.0em;
 }
 
 @media all and (min-width: 600px) {
-  /* line 191, sass/partials/_parallax.scss */
+  /* line 213, sass/partials/_parallax.scss */
   section.module h2 {
     font-size: 42px;
   }
 
-  /* line 194, sass/partials/_parallax.scss */
+  /* line 216, sass/partials/_parallax.scss */
   section.module p {
     font-size: 20px;
   }
 
-  /* line 197, sass/partials/_parallax.scss */
+  /* line 219, sass/partials/_parallax.scss */
   section.module.parallax h1 {
     font-size: 96px;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 202, sass/partials/_parallax.scss */
+  /* line 224, sass/partials/_parallax.scss */
   section.module.parallax h1 {
     font-size: 160px;
   }
