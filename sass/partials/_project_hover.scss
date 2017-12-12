@@ -125,9 +125,15 @@ section.project_container{
     h2{
       background-color: transparent;
     }
+    @include media($phone) {
+      @include span-columns(12);
+    }
   }
   .project_content_block{
     @include span-columns(8);
     flex: 1;
+    @include media($phone) {
+      @include span-columns(12);
+    }
   }
 }
