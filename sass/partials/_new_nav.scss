@@ -146,7 +146,6 @@ header.navigation {
     padding: 0;
     width: 100%;
     z-index: 9999;
-    background-color:#471d11;
 
     &.show {
       display: block;
@@ -190,7 +189,7 @@ header.navigation {
     }
 
     a {
-      color: $navigation-color;
+      color: $navigation-color-lmc;
       display: inline-block;
       text-decoration: none;
       font-weight: 400;
@@ -204,7 +203,7 @@ header.navigation {
 
       &:focus,
       &:hover {
-        color: $navigation-color-hover;
+        color: $navigation-color-hover-lmc;
       }
     }
   }
@@ -408,10 +407,10 @@ header.navigation {
 }
 
 .interior-logo-cta {
-  width: 20%;
+  width: 15%;
   height: auto;
   float: left;
-  margin-left: 12%;
+  margin-left: 14%;
   @include media ($tablet) {
     margin-left: auto;
     margin: 0 auto;
