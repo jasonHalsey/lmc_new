@@ -5,7 +5,8 @@ $mobile: new-breakpoint(max-width 767px);
 $phone: new-breakpoint(max-width 468px);
 
 // CTAS
-$cta-background-color: #0b5359;
+// $cta-background-color: #0b5359;
+$cta-background-color: #696969;
 $cta-background-color-dk:darken($cta-background-color, 10%);
 
 

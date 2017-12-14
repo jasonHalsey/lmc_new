@@ -517,7 +517,7 @@ div.mc-image {
 }
 /* line 84, sass/partials/_project_hover.scss */
 .hover-tile-outer .hover-tile-visible {
-  color: rgba(255, 255, 255, 0.7);
+  color: #fff;
   font-size: 1.35em;
   font-weight: 200;
   text-align: center;
@@ -527,14 +527,14 @@ div.mc-image {
 .hover-tile-outer .hover-tile-visible span {
   display: block;
   width: 100%;
-  background: rgba(11, 83, 89, 0.7);
+  background: rgba(105, 105, 105, 0.6);
   line-height: 1.4em;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
 }
 /* line 100, sass/partials/_project_hover.scss */
 .hover-tile-outer .hover-tile-hidden {
-  background: rgba(11, 83, 89, 0.7);
+  background: rgba(105, 105, 105, 0.6);
 }
 /* line 102, sass/partials/_project_hover.scss */
 .hover-tile-outer .hover-tile-hidden h4 {
@@ -1375,7 +1375,7 @@ div.portfolio-bg img {
   -webkit-columns: 3 200px;
   -moz-columns: 3 200px;
   columns: 3 200px;
-  color: #bababa;
+  color: #696969;
   text-align: center;
   padding: 2.0em 0;
 }
@@ -1523,7 +1523,7 @@ body.home {
 /* line 74, sass/partials/_home.scss */
 .ctas a {
   display: block;
-  background-color: #0b5359;
+  background-color: #696969;
   color: #fff;
   text-transform: uppercase;
   padding: 0.5em 1.0em;
@@ -1533,18 +1533,18 @@ body.home {
 }
 /* line 83, sass/partials/_home.scss */
 .ctas a:hover {
-  background-color: #05292c;
+  background-color: #505050;
 }
 /* line 85, sass/partials/_home.scss */
 .ctas a:hover:after {
-  background-color: #0b5359;
+  background-color: #696969;
 }
 /* line 89, sass/partials/_home.scss */
 .ctas a:after {
   content: ">";
   display: inline;
   width: 20%;
-  background-color: #05292c;
+  background-color: #505050;
   position: absolute;
   right: 0;
   top: 0;

@@ -82,7 +82,7 @@ $medium-screen: em(640);
   }
 
   .hover-tile-visible {
-    color: transparentize(white, .3);
+    color: #fff;
     font-size: 1.35em;
     font-weight: 200;
     text-align: center;
@@ -90,7 +90,7 @@ $medium-screen: em(640);
     span{
       display: block;
       width: 100%;
-      background: transparentize($cta-background-color, .3);
+      background: transparentize($cta-background-color, .4);
       line-height: 1.4em;
       text-transform: uppercase;
       font-family: $primary-font;
@@ -98,7 +98,7 @@ $medium-screen: em(640);
   }
 
   .hover-tile-hidden {
-    background: transparentize($cta-background-color, .3);
+    background: transparentize($cta-background-color, .4);
     h4 {
       margin-bottom: .2em;
       font-family: $primary-font;
