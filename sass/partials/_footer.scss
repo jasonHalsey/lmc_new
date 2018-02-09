@@ -22,7 +22,7 @@ html, body {
 
 .footer-2 {
   $footer-color: white;
-  $footer-link-color: transparentize($footer-color, .9);
+  $footer-link-color: transparentize($footer-color, .6);
   $footer-disclaimer-color: transparentize($footer-color, .6);
 
   background: $footer-background;
@@ -76,7 +76,7 @@ html, body {
   }
 
   ul li a {
-    color: $footer-link-color-lmc;
+    color: $footer-link-color;
 
     &:hover {
       color: transparentize($footer-color, 0);

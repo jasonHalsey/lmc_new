@@ -82,7 +82,7 @@ $medium-screen: em(640);
   }
 
   .hover-tile-visible {
-    color: #fff;
+    color: transparentize(white, .3);
     font-size: 1.35em;
     font-weight: 200;
     text-align: center;
@@ -90,7 +90,7 @@ $medium-screen: em(640);
     span{
       display: block;
       width: 100%;
-      background: transparentize($cta-background-color, .4);
+      background: transparentize($cta-background-color, .3);
       line-height: 1.4em;
       text-transform: uppercase;
       font-family: $primary-font;
@@ -98,7 +98,7 @@ $medium-screen: em(640);
   }
 
   .hover-tile-hidden {
-    background: transparentize($cta-background-color, .4);
+    background: transparentize($cta-background-color, .3);
     h4 {
       margin-bottom: .2em;
       font-family: $primary-font;
@@ -125,15 +125,9 @@ section.project_container{
     h2{
       background-color: transparent;
     }
-    @include media($phone) {
-      @include span-columns(12);
-    }
   }
   .project_content_block{
     @include span-columns(8);
     flex: 1;
-    @include media($phone) {
-      @include span-columns(12);
-    }
   }
 }

@@ -129,7 +129,7 @@ div.empty_container{
 
 section.module_brand.content_brand {
   background-color: $light-grey;
-  color:$paragraph-color;
+  color:#fff;
   margin-bottom: 0;
   position: relative;
   z-index: 200;
@@ -150,22 +150,14 @@ div.brand-title{
     display: block;
       padding: 0.5em 0;
       text-align: center;
-      color: $paragraph-color;
+      color: #fff;
       font-family: "Oswald", sans-serif;
       text-transform: uppercase;
       font-size: 2.0em;
       font-weight: 300;
-      position: re;
-      transform: none;
-      border-bottom: 1px solid $paragraph-color;
-      @media (min-width: 1400px){
-        position: absolute;
-        transform: translate(-50%, 50%);
-      }
-  }
-  @include media($mobile) {
-    @include span-columns(12);
-    min-height:2px;
+      position: absolute;
+      transform: translate(-50%, 50%);
+      border-bottom: 1px solid #fff;
   }
 }
 div.brand-content{
@@ -186,9 +178,6 @@ div.brand-content{
     &:first-child{
       margin-top: 0.75em;
     }
-  }
-  @include media($mobile) {
-    @include span-columns(12);
   }
 }
 section.module.parallax_brand {

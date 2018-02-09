@@ -118,7 +118,7 @@ header.navigation {
       text-align: center;
       border-top: 1px solid #fff;
       border-bottom: 1px solid #fff;
-      // margin-bottom: 1.0em;
+      margin-bottom: 1.0em;
     }
   }
 
@@ -146,6 +146,7 @@ header.navigation {
     padding: 0;
     width: 100%;
     z-index: 9999;
+    background-color:#471d11;
 
     &.show {
       display: block;
@@ -189,7 +190,7 @@ header.navigation {
     }
 
     a {
-      color: $navigation-color-lmc;
+      color: $navigation-color;
       display: inline-block;
       text-decoration: none;
       font-weight: 400;
@@ -203,7 +204,7 @@ header.navigation {
 
       &:focus,
       &:hover {
-        color: $navigation-color-hover-lmc;
+        color: $navigation-color-hover;
       }
     }
   }
@@ -407,10 +408,10 @@ header.navigation {
 }
 
 .interior-logo-cta {
-  width: 15%;
+  width: 20%;
   height: auto;
   float: left;
-  margin-left: 14%;
+  margin-left: 12%;
   @include media ($tablet) {
     margin-left: auto;
     margin: 0 auto;

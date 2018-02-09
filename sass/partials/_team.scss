@@ -7,17 +7,11 @@ body.page-template-archive-team{
 	}
 }
 
-body.single-team{
-	.single-contain{
-		border-top:1px solid $dk-grey-highlight;
-	}
-}
-
 div.individual-container{
 	width:100%;
 	@include outer-container;
 	@include clearfix;
-	margin-top: 0.25em;
+	// margin-top: 0.25em;
 }
 
 article.individual-member{
@@ -97,6 +91,7 @@ article.individual-member a:hover > .overlay {
 
 article.individual-team-container{
 	@include outer-container;
+	// @include omega;
 	@include clearfix;
 	@include media($tablet) {
 		padding: 1.0em;
@@ -107,19 +102,6 @@ article.individual-team-container{
 			display:block;
 		}
 	}
-	@media (min-width: 700px){
-		h2{
-			padding-top: 3.0em;
-		}
-	}
-	@include media($mobile) {
-		div.individual-team-image{
-			@include span-columns(12);
-		}
-	}
 }
 
-div.startYear{
-	display:none;
-}
 

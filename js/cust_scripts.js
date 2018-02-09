@@ -24,8 +24,9 @@ jQuery(document).ready(function() {
 
 
 	getServiceYears();
- 
+
 }); //End document.ready();
+
 
 jQuery(document).ready(function() {
   var menuToggle = jQuery('#js-mobile-menu').unbind();
@@ -78,4 +79,4 @@ jQuery(document).ready(function() {
 		console.log(YearNum);
 		console.log(serviceYears);
 	}
-
+	

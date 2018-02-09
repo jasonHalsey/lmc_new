@@ -47,7 +47,7 @@ div.portfolio-bg{
 	-webkit-columns: 3 200px;
 	-moz-columns: 3 200px;
 	columns: 3 200px;
-	color:#696969;
+	color:#bababa;
 	text-align: center;
 	padding: 2.0em 0;
 }
@@ -55,17 +55,17 @@ div.portfolio-bg{
 body.single-portfolio{
 	h2{    
 		display: block;
-	    background-color: $dk-grey-highlight;
-	    padding: 0.5em 0;
-	    text-align: center;
-	    color: $paragraph-color;
-	    font-family: "Oswald", sans-serif;
-	    text-transform: uppercase;
-	    font-size: 2.0em;
-	    font-weight: 300;
-	  }
+    background-color: #242424;
+    padding: 0.5em 0;
+    text-align: center;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 2.0em;
+    font-weight: 300;
+  }
   .single-contain{
-  	color:$paragraph-color;
+  	color:#bababa;
   	margin-top: 1.0em;
   }
 }
